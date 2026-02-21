@@ -205,10 +205,24 @@ a:hover {
 .navbar__logo {
     display: flex;
     align-items: center;
-    gap: var(--space-2);
-    font-size: var(--text-xl);
-    font-weight: 700;
-    color: var(--color-primary);
+    gap: var(--space-3);
+    font-size: clamp(1.125rem, 3vw, 1.375rem);
+    font-weight: 900;
+    color: var(--color-text-primary);
+    text-decoration: none;
+    transition: all var(--transition-base);
+}
+
+.navbar__logo:hover {
+    transform: translateY(-2px);
+}
+
+.navbar__logo svg {
+    transition: all var(--transition-base);
+}
+
+.navbar__logo:hover svg {
+    transform: rotate(-5deg) scale(1.05);
 }
 
 .navbar__logo-icon {
@@ -483,27 +497,37 @@ a:hover {
 }
 
 .card__icon {
-    width: 70px;
-    height: 70px;
-    background: linear-gradient(135deg, var(--color-primary-light), var(--color-accent));
-    border-radius: var(--radius-lg);
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    border-radius: var(--radius-xl);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: var(--space-4);
-    font-size: 2rem;
+    margin-bottom: var(--space-5);
+    font-size: 2.5rem;
+    box-shadow: 0 8px 24px rgba(255, 168, 92, 0.3);
+    transition: all var(--transition-base);
+}
+
+.card:hover .card__icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 12px 32px rgba(255, 168, 92, 0.4);
 }
 
 .card__title {
-    font-size: var(--text-2xl);
-    margin-bottom: var(--space-3);
+    font-size: clamp(1.375rem, 3vw, 1.625rem);
+    font-weight: 800;
+    margin-bottom: var(--space-4);
     color: var(--color-text-primary);
+    line-height: 1.4;
 }
 
 .card__description {
     color: var(--color-text-secondary);
-    line-height: 1.8;
+    line-height: 1.9;
     margin-bottom: var(--space-6);
+    font-size: 1rem;
 }
 
 /* ============================================
@@ -647,48 +671,59 @@ a:hover {
 }
 
 .faq-category {
-    font-size: var(--text-xl);
+    font-size: clamp(1.5rem, 4vw, 1.75rem);
+    font-weight: 800;
     color: var(--color-primary);
     margin: var(--space-12) 0 var(--space-6);
-    padding-bottom: var(--space-3);
-    border-bottom: 3px solid var(--color-primary-light);
+    padding: var(--space-4) var(--space-6);
+    background: linear-gradient(135deg, var(--color-bg-alt) 0%, var(--color-bg) 100%);
+    border-left: 6px solid var(--color-primary);
+    border-radius: var(--radius-md);
 }
 
 .faq-item {
     background: white;
     border-radius: var(--radius-lg);
-    margin-bottom: var(--space-4);
-    box-shadow: var(--shadow-sm);
+    margin-bottom: var(--space-5);
+    box-shadow: 0 4px 16px rgba(255, 168, 92, 0.1);
     overflow: hidden;
-    border: 2px solid transparent;
-    transition: var(--transition-base);
+    border: 2px solid rgba(255, 168, 92, 0.15);
+    transition: all var(--transition-base);
 }
 
 .faq-item:hover {
-    border-color: var(--color-primary-light);
+    border-color: var(--color-primary);
+    box-shadow: 0 8px 24px rgba(255, 168, 92, 0.2);
+    transform: translateY(-2px);
 }
 
 .faq-item__question {
     width: 100%;
-    padding: var(--space-6);
-    background: none;
+    padding: var(--space-5) var(--space-6);
+    background: linear-gradient(135deg, rgba(255, 250, 245, 0.5) 0%, rgba(255, 255, 255, 1) 100%);
     border: none;
     text-align: left;
-    font-size: var(--text-lg);
-    font-weight: 600;
+    font-size: clamp(1rem, 3vw, 1.125rem);
+    font-weight: 700;
     color: var(--color-text-primary);
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: var(--space-4);
+    transition: background var(--transition-base);
+}
+
+.faq-item__question:hover {
+    background: linear-gradient(135deg, rgba(255, 250, 245, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }
 
 .faq-item__answer {
     padding: 0 var(--space-6) var(--space-6);
     color: var(--color-text-secondary);
-    line-height: 1.8;
+    line-height: 1.9;
     display: none;
+    font-size: 1rem;
 }
 
 .faq-item__answer.active {
