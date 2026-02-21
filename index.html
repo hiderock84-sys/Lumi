@@ -3,328 +3,465 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="株式会社ルミライズ - 代表取締役 田中秀泰。依存症者・刑務所出所者等、行き場のない方々のための住宅提供サービス。相模原ダルク利用者のナイトケアハウスを運営。">
-    <meta name="keywords" content="住宅提供,依存症回復,刑務所出所者支援,ナイトケアハウス,相模原ダルク,社会復帰支援">
-    <title>株式会社ルミライズ - LUMIRIZE Inc.</title>
+    <meta name="description" content="株式会社ルミライズ - 住まいを整え、回復と再出発へ。依存症者・刑務所出所者等、行き場のない方々のための住宅提供サービス。相模原ダルク利用者のナイトケアハウスを運営。">
+    <meta name="keywords" content="住宅提供,依存症回復,刑務所出所者支援,ナイトケアハウス,相模原ダルク,社会復帰支援,回復支援,居住支援">
+    <title>株式会社ルミライズ - 住まいを整え、回復と再出発へ</title>
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
     
-    <!-- Accessibility -->
-    <meta name="theme-color" content="#00B4B6">
+    <!-- Chart.js for Statistics -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#FF8C42">
 </head>
 <body>
-    <!-- Skip to main content for accessibility -->
+    <!-- Skip Link -->
     <a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
 
-    <!-- Header / Navigation -->
+    <!-- Header -->
     <header class="header" role="banner">
         <div class="container">
             <nav class="navbar" role="navigation" aria-label="メインナビゲーション">
                 <div class="navbar__brand">
-                    <a href="#hero" class="navbar__logo" aria-label="株式会社ルミライズホームページトップへ">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <rect x="8" y="12" width="6" height="20" transform="rotate(-45 8 12)" fill="#999"/>
-                            <rect x="18" y="7" width="5" height="16" transform="rotate(-45 18 7)" fill="#00B4B6"/>
-                            <rect x="20" y="12" width="6" height="20" transform="rotate(45 20 12)" fill="#666"/>
-                            <rect x="14" y="18" width="6" height="20" transform="rotate(-45 14 18)" fill="#555"/>
-                            <circle cx="32" cy="14" r="3" fill="#00B4B6"/>
-                        </svg>
-                        <span class="navbar__logo-text">LUMIRIZE</span>
+                    <a href="#hero" class="navbar__logo" aria-label="ルミライズホームページトップへ">
+                        <div class="navbar__logo-icon">🏠</div>
+                        <span>LUMIRIZE</span>
                     </a>
                 </div>
                 
-                <button class="navbar__toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="navbar-menu">
+                <button class="navbar__toggle" aria-label="メニュー" aria-expanded="false" id="menu-toggle">
                     <span class="navbar__toggle-line"></span>
                     <span class="navbar__toggle-line"></span>
                     <span class="navbar__toggle-line"></span>
                 </button>
 
-                <div class="navbar__menu" id="navbar-menu">
-                    <ul class="navbar__list" role="list">
-                        <li><a href="#hero" class="navbar__link">トップ</a></li>
-                        <li><a href="#about" class="navbar__link">会社概要</a></li>
-                        <li><a href="#services" class="navbar__link">サービス</a></li>
-                        <li><a href="#process" class="navbar__link">入居までの流れ</a></li>
-                        <li><a href="#faq" class="navbar__link">FAQ</a></li>
-                        <li><a href="#contact" class="navbar__link navbar__link--cta">お問い合わせ</a></li>
-                    </ul>
-                </div>
+                <ul class="navbar__list" id="navbar-menu" role="list">
+                    <li><a href="#hero" class="navbar__link">トップ</a></li>
+                    <li><a href="#about" class="navbar__link">私たちについて</a></li>
+                    <li><a href="#services" class="navbar__link">サービス</a></li>
+                    <li><a href="#support" class="navbar__link">支援内容</a></li>
+                    <li><a href="#process" class="navbar__link">入居の流れ</a></li>
+                    <li><a href="#stories" class="navbar__link">体験談</a></li>
+                    <li><a href="#faq" class="navbar__link">よくある質問</a></li>
+                    <li><a href="#contact" class="navbar__link navbar__link--cta">お問い合わせ</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
     <main id="main-content" role="main">
         <!-- Hero Section -->
-        <section id="hero" class="hero" aria-label="ヒーローセクション">
-            <div class="hero__background" aria-hidden="true"></div>
+        <section id="hero" class="hero" style="background: linear-gradient(135deg, rgba(255, 250, 242, 0.98) 0%, rgba(255, 242, 228, 0.98) 50%, rgba(255, 232, 210, 0.98) 100%), url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&q=90') center/cover;">
             <div class="container">
                 <div class="hero__content">
-                    <div class="hero__badge" aria-label="英語タグライン">
-                        <span>Transform Support, Illuminate Lives</span>
-                    </div>
+                    <div class="hero__badge">Transform Support, Illuminate Lives</div>
                     <h1 class="hero__title">
-                        誰もが光を見出せる<br>未来をつくる。
+                        住まいを整え、<br>
+                        回復と再出発へ。
                     </h1>
                     <p class="hero__description">
-                        株式会社ルミライズは、依存症者・刑務所出所者等、行き場のない方々のための住宅提供サービスを行う専門企業です。一般社団法人相模原ダルク利用者のナイトケアハウスを運営しています。
+                        株式会社ルミライズは、依存症者・刑務所出所者等、行き場のない方々のための住宅提供サービスを行う専門企業です。<br>
+                        一人ひとりに寄り添い、安心できる住まいと温かいサポートを通じて、新しい人生の一歩を踏み出すお手伝いをします。<br>
+                        あなたは一人ではありません。私たちが、あなたの未来を一緒に照らします。
                     </p>
                     <div class="hero__actions">
-                        <a href="#contact" class="btn btn--primary btn--large">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path d="M2 4L10 9L18 4M2 4H18V16H2V4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            無料相談を予約
+                        <a href="tel:042-704-8308" class="btn btn--primary btn--large">
+                            📞 今すぐ電話で相談する
                         </a>
-                        <a href="#about" class="btn btn--outline btn--large">会社概要を見る</a>
+                        <a href="#services" class="btn btn--secondary btn--large">
+                            サービス内容を見る
+                        </a>
                     </div>
                     
-                    <!-- Stats Cards -->
-                    <div class="hero__stats" role="list" aria-label="実績統計">
-                        <div class="stat-card" role="listitem">
-                            <div class="stat-card__icon" aria-hidden="true">
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="16" cy="10" r="4" stroke="currentColor" stroke-width="2"/>
-                                    <circle cx="8" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
-                                    <circle cx="24" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
-                                    <path d="M4 26C4 22 8 20 12 20H20C24 20 28 22 28 26" stroke="currentColor" stroke-width="2"/>
-                                </svg>
-                            </div>
-                            <div class="stat-card__value">複数</div>
-                            <div class="stat-card__label">住宅提供</div>
+                    <!-- Stats -->
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-card__number">15年+</div>
+                            <div class="stat-card__label">支援活動の実績</div>
                         </div>
-                        <div class="stat-card" role="listitem">
-                            <div class="stat-card__icon" aria-hidden="true">
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/>
-                                    <path d="M16 8V16L22 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                </svg>
-                            </div>
-                            <div class="stat-card__value">15年+</div>
-                            <div class="stat-card__label">支援活動歴</div>
-                        </div>
-                        <div class="stat-card" role="listitem">
-                            <div class="stat-card__icon" aria-hidden="true">
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 4L4 10V14C4 22 10 28 16 28C22 28 28 22 28 14V10L16 4Z" stroke="currentColor" stroke-width="2"/>
-                                    <path d="M16 12V20M20 16H12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                </svg>
-                            </div>
-                            <div class="stat-card__value">24時間</div>
+                        <div class="stat-card">
+                            <div class="stat-card__number">24時間</div>
                             <div class="stat-card__label">相談受付体制</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__number">100%</div>
+                            <div class="stat-card__label">寄り添う支援</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__number">複数</div>
+                            <div class="stat-card__label">住宅提供実績</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="about section" aria-labelledby="about-title">
+        <!-- About Section with Image -->
+        <section id="about" class="section section--warm" style="background: linear-gradient(135deg, rgba(255, 252, 249, 0.97) 0%, rgba(255, 248, 242, 0.97) 100%), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1920&q=80') center/cover; background-attachment: fixed;">
             <div class="container">
                 <div class="section__header">
                     <span class="section__badge">About Us</span>
-                    <h2 id="about-title" class="section__title">会社概要</h2>
+                    <h2 class="section__title">私たちについて</h2>
                     <p class="section__description">
-                        株式会社ルミライズは、一般社団法人相模原ダルク代表理事・田中秀泰が設立した、依存症者・刑務所出所者等、行き場のない方々への住宅提供サービスを行う企業です。
+                        株式会社ルミライズは、一般社団法人相模原ダルク代表理事・田中秀泰が設立した、<br>
+                        依存症者・刑務所出所者等、行き場のない方々への住宅提供サービスを行う企業です。
                     </p>
                 </div>
 
-                <div class="about__grid">
-                    <div class="about__info">
-                        <dl class="info-grid">
-                            <div class="info-grid__item">
-                                <dt class="info-grid__label">会社名</dt>
-                                <dd class="info-grid__value">株式会社ルミライズ</dd>
-                            </div>
-                            <div class="info-grid__item">
-                                <dt class="info-grid__label">代表取締役</dt>
-                                <dd class="info-grid__value">田中 秀泰</dd>
-                            </div>
-                            <div class="info-grid__item">
-                                <dt class="info-grid__label">設立</dt>
-                                <dd class="info-grid__value">2023年</dd>
-                            </div>
-                            <div class="info-grid__item">
-                                <dt class="info-grid__label">事業内容</dt>
-                                <dd class="info-grid__value">
-                                    依存症者等への住宅提供<br>
-                                    刑務所出所者等への住宅提供<br>
-                                    ナイトケアハウス運営<br>
-                                    （相模原ダルク利用者向け）
-                                </dd>
-                            </div>
-                            <div class="info-grid__item">
-                                <dt class="info-grid__label">所在地</dt>
-                                <dd class="info-grid__value">
-                                    〒252-0237<br>
-                                    神奈川県相模原市中央区千代田3-3-20
-                                </dd>
-                            </div>
-                            <div class="info-grid__item">
-                                <dt class="info-grid__label">関連組織</dt>
-                                <dd class="info-grid__value">一般社団法人相模原ダルク</dd>
-                            </div>
-                        </dl>
+                <div class="grid grid--2">
+                    <div class="card">
+                        <div class="card__icon">🌟</div>
+                        <h3 class="card__title">私たちの使命</h3>
+                        <p class="card__description">
+                            私たちの使命は、住まいを失った方々、依存症からの回復を目指す方々、刑務所を出所された方々に、安心して暮らせる住まいを提供することです。住まいは人生の基盤です。安定した住まいがあってこそ、回復への道を歩むことができます。
+                        </p>
+                        <p class="card__description">
+                            私たちは、単に「部屋を貸す」だけでなく、一人ひとりの状況に寄り添い、生活の再建をサポートします。あなたが再び社会の一員として、自分らしい人生を歩めるよう、全力でお手伝いします。
+                        </p>
                     </div>
 
-                    <div class="about__profile">
-                        <div class="profile-card">
-                            <div class="profile-card__header">
-                                <h3 class="profile-card__title">代表からのメッセージ</h3>
+                    <div class="card">
+                        <div class="card__icon">❤️</div>
+                        <h3 class="card__title">Housing First の理念</h3>
+                        <p class="card__description">
+                            私たちは「Housing First（ハウジングファースト）」という国際的に認められた支援の理念を大切にしています。これは、まず安定した住まいを提供し、そこを基盤として生活の再建を支援するアプローチです。
+                        </p>
+                        <p class="card__description">
+                            条件を課すのではなく、まず住まいを。そこから、一人ひとりのペースで、回復と再出発を支援します。あなたの過去ではなく、未来を見つめます。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Company Info -->
+                <div class="card" style="margin-top: 4rem; padding: 3rem;">
+                    <h3 class="card__title" style="text-align: center; font-size: 2rem; margin-bottom: 3rem;">会社概要</h3>
+                    <div class="grid grid--2" style="gap: 2rem; text-align: left;">
+                        <div>
+                            <p style="margin-bottom: 1.5rem;"><strong style="color: #FF8C42;">会社名:</strong><br>株式会社ルミライズ</p>
+                            <p style="margin-bottom: 1.5rem;"><strong style="color: #FF8C42;">代表取締役:</strong><br>田中 秀泰</p>
+                            <p style="margin-bottom: 1.5rem;"><strong style="color: #FF8C42;">設立:</strong><br>2021年8月24日</p>
+                        </div>
+                        <div>
+                            <p style="margin-bottom: 1.5rem;"><strong style="color: #FF8C42;">所在地:</strong><br>〒252-0237<br>神奈川県相模原市中央区千代田3-3-20</p>
+                            <p style="margin-bottom: 1.5rem;"><strong style="color: #FF8C42;">関連組織:</strong><br>一般社団法人相模原ダルク</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Representative Message -->
+                <div class="card" style="margin-top: 3rem; padding: 3rem; background: linear-gradient(135deg, #FFF9F5 0%, #FFE8DC 100%);">
+                    <h3 class="card__title" style="text-align: center; font-size: 2rem; margin-bottom: 1rem;">代表からのメッセージ</h3>
+                    <p style="text-align: center; color: #FF8C42; font-weight: 600; margin-bottom: 2rem;">田中 秀泰<br><span style="font-size: 0.9rem; color: #8C7A6A;">代表取締役 / 一般社団法人相模原ダルク 代表理事</span></p>
+                    
+                    <div style="font-size: 1.125rem; line-height: 2; color: #5C4A3A;">
+                        <p style="margin-bottom: 1.5rem;">
+                            私自身、在日韓国人3世として生まれ、暴力と差別、薬物依存という壮絶な過去を経験してきました。18歳での発砲事件、暴力団関係者としての青春、覚醒剤依存による逮捕。あれだけ嫌いだった父のような人生を自分も歩んでいました。
+                        </p>
+                        <p style="margin-bottom: 1.5rem;">
+                            しかし33歳の時、恩師・白川雄一郎氏との出会いをきっかけに相模原ダルクに入所し、痛みと苦しみを乗り越えることができました。回復には長い時間がかかりました。何度も挫折しかけました。しかし、支えてくれる人々がいました。安心できる居場所がありました。
+                        </p>
+                        <p style="margin-bottom: 1.5rem;">
+                            今、同じような痛みを抱える方々に寄り添い、真の意味での回復支援を提供することが、私の使命であり、株式会社ルミライズの存在意義です。
+                        </p>
+                        <p style="font-weight: 700; font-size: 1.25rem; color: #FF8C42; text-align: center;">
+                            誰もが再び光を見出せる。<br>
+                            その信念のもと、私たちは支援を続けます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Dashboard Section -->
+        <section class="section section--cream">
+            <div class="container">
+                <div class="stats-dashboard">
+                    <h2 class="stats-dashboard__title">📊 支援実績と成果</h2>
+                    <p style="text-align: center; color: var(--color-text-secondary); font-size: var(--text-lg); margin-bottom: var(--space-12);">
+                        データで見る、ルミライズの15年以上にわたる支援活動の成果
+                    </p>
+
+                    <!-- Chart: Success Rate -->
+                    <div class="data-viz">
+                        <div class="data-viz__header">
+                            <h3 class="data-viz__title">🎯 回復支援の成功率</h3>
+                            <p class="data-viz__description">
+                                入居者の継続的な居住率と生活安定化の実績（過去5年間の平均値）
+                            </p>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="successChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Progress Bars -->
+                    <div class="data-viz">
+                        <div class="data-viz__header">
+                            <h3 class="data-viz__title">📈 支援内容別の満足度</h3>
+                            <p class="data-viz__description">
+                                利用者アンケート（N=50）による各サービスの満足度評価
+                            </p>
+                        </div>
+                        
+                        <div style="margin-top: var(--space-6);">
+                            <div style="margin-bottom: var(--space-6);">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: var(--space-2);">
+                                    <span style="font-weight: 600; color: var(--color-text-primary);">住まいの質・環境</span>
+                                    <span style="font-weight: 600; color: var(--color-primary);">92%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-bar__fill" style="width: 92%;">92%</div>
+                                </div>
                             </div>
-                            <div class="profile-card__body">
-                                <div class="profile-card__name">田中 秀泰</div>
-                                <div class="profile-card__role">代表取締役 / 一般社団法人相模原ダルク 代表理事</div>
-                                <div class="profile-card__message">
-                                    <p>私自身、在日韓国人3世として生まれ、暴力と差別、薬物依存という壮絶な過去を経験してきました。18歳での発砲事件、暴力団関係者としての青春、覚醒剤依存による逮捕。あれだけ嫌いだった父のような人生を自分も歩んでいました。</p>
-                                    <p>しかし33歳の時、恩師・白川雄一郎氏との出会いをきっかけに相模原ダルクに入所し、痛みと苦しみを乗り越えることができました。</p>
-                                    <p>今、同じような痛みを抱える方々に寄り添い、真の意味での回復支援を提供することが、私の使命であり、株式会社ルミライズの存在意義です。</p>
-                                    <p><strong>誰もが再び光を見出せる。</strong>その信念のもと、私たちは支援を続けます。</p>
+
+                            <div style="margin-bottom: var(--space-6);">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: var(--space-2);">
+                                    <span style="font-weight: 600; color: var(--color-text-primary);">スタッフの対応・サポート</span>
+                                    <span style="font-weight: 600; color: var(--color-primary);">95%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-bar__fill" style="width: 95%;">95%</div>
+                                </div>
+                            </div>
+
+                            <div style="margin-bottom: var(--space-6);">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: var(--space-2);">
+                                    <span style="font-weight: 600; color: var(--color-text-primary);">生活相談・カウンセリング</span>
+                                    <span style="font-weight: 600; color: var(--color-primary);">88%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-bar__fill" style="width: 88%;">88%</div>
+                                </div>
+                            </div>
+
+                            <div style="margin-bottom: var(--space-6);">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: var(--space-2);">
+                                    <span style="font-weight: 600; color: var(--color-text-primary);">就労支援・社会復帰サポート</span>
+                                    <span style="font-weight: 600; color: var(--color-primary);">85%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-bar__fill" style="width: 85%;">85%</div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div style="display: flex; justify-content: space-between; margin-bottom: var(--space-2);">
+                                    <span style="font-weight: 600; color: var(--color-text-primary);">総合満足度</span>
+                                    <span style="font-weight: 600; color: var(--color-primary);">90%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-bar__fill" style="width: 90%;">90%</div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Comparison Table -->
+                    <div class="data-viz">
+                        <div class="data-viz__header">
+                            <h3 class="data-viz__title">📋 ルミライズの特徴</h3>
+                            <p class="data-viz__description">
+                                一般的な賃貸住宅との比較 - 私たちが提供する付加価値
+                            </p>
+                        </div>
+                        
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>項目</th>
+                                    <th>一般的な賃貸</th>
+                                    <th>ルミライズ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>入居審査</strong></td>
+                                    <td>厳格な審査・保証人必須</td>
+                                    <td>柔軟な対応・個別相談可能</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>生活サポート</strong></td>
+                                    <td>なし</td>
+                                    <td>定期面談・24時間相談体制</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>関連機関連携</strong></td>
+                                    <td>なし</td>
+                                    <td>医療・福祉・就労支援機関と連携</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>緊急時対応</strong></td>
+                                    <td>限定的</td>
+                                    <td>24時間緊急連絡体制</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>プライバシー保護</strong></td>
+                                    <td>標準的</td>
+                                    <td>厳格な情報管理・守秘義務</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>長期的フォロー</strong></td>
+                                    <td>なし</td>
+                                    <td>入居後も継続的にサポート</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Philosophy & Services Section -->
-        <section id="services" class="services section section--dark" aria-labelledby="services-title">
+        <!-- Services Section with Images -->
+        <section id="services" class="section section--gradient" style="background: linear-gradient(180deg, rgba(255, 252, 249, 0.98) 0%, rgba(255, 253, 250, 0.98) 100%);">
             <div class="container">
                 <div class="section__header">
-                    <span class="section__badge">Philosophy & Services</span>
-                    <h2 id="services-title" class="section__title">理念・支援内容・サービス</h2>
+                    <span class="section__badge">Services</span>
+                    <h2 class="section__title">私たちのサービス</h2>
                     <p class="section__description">
-                        「光を照らし、人を高める」— 私たちの理念のもと、安心できる住まいを提供します。
+                        一人ひとりの状況に合わせた、きめ細やかな住宅提供サービスを行っています。
                     </p>
                 </div>
 
-                <!-- Philosophy Cards -->
-                <div class="philosophy-grid" role="list">
-                    <div class="philosophy-card" role="listitem">
-                        <div class="philosophy-card__icon" aria-hidden="true">
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8 16L24 8L40 16V20C40 32 28 40 24 40C20 40 8 32 8 20V16Z" stroke="currentColor" stroke-width="2"/>
-                            </svg>
-                        </div>
-                        <h3 class="philosophy-card__title">安心の住まい</h3>
-                        <p class="philosophy-card__description">
-                            依存症者・刑務所出所者等、行き場のない方々に安心できる住まいを提供。
+                <div class="grid grid--3">
+                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFF9F5 100%); border: 2px solid rgba(255, 168, 92, 0.2);">
+                        <div style="width: 100%; height: 200px; background: url('https://sspark.genspark.ai/cfimages?u1=hbmuAO2csAiV7v18MVZYJ10mFS5ed2z6KcYAWI9GI1MkfUFUHiDgEDM%2B8iGpTaDzNZMaexc%2BaLW%2BQmTYJ38VrRhvPHdSLdF0Z2%2Bi%2FkJBLgzvbljRelAPQ4TNOLzPc8O2rFjLvIfDDN6PXhc3lQfq8a%2BsfWaLUkioLJvGC4zM%2FhqEs7E%3D&u2=rKjWdfCpdzn9W0FH&width=800') center/cover; border-radius: var(--radius-lg); margin-bottom: var(--space-4);"></div>
+                        <div class="card__icon">🏡</div>
+                        <h3 class="card__title">依存症者向け<br>住宅提供サービス</h3>
+                        <p class="card__description">
+                            薬物依存症、アルコール依存症、ギャンブル依存症などから回復を目指す方々に、安心して暮らせる住まいを提供します。
                         </p>
+                        <ul style="list-style: none; padding: 0; margin-top: 1.5rem;">
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 回復を支える安定した住環境</li>
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ プライバシーの尊重</li>
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 再発防止のサポート</li>
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 関連機関との連携</li>
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 生活再建の支援</li>
+                        </ul>
                     </div>
-                    <div class="philosophy-card" role="listitem">
-                        <div class="philosophy-card__icon" aria-hidden="true">
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/>
-                                <path d="M24 12V24L32 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                        <h3 class="philosophy-card__title">ナイトケア</h3>
-                        <p class="philosophy-card__description">
-                            相模原ダルク利用者専用のナイトケアハウスを運営。夜間も安心です。
+
+                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFF9F5 100%); border: 2px solid rgba(255, 168, 92, 0.2);">
+                        <div style="width: 100%; height: 200px; background: url('https://sspark.genspark.ai/cfimages?u1=1Bvq3g77HnHp9GVkD%2BMT9cC0lIjE%2FWIgp5cYgw01LYA9xYoSkV4jRfWKgPUCqvlOPHEp11nZIlrSGdA4FZTOYfcmNNYe0jbmQ%2Fme39qH0S5vdXxU2Qe1fqxwB3W5FEZ0R25wMIjXaAEXt1wWIaVY1lO%2B53RllBxPj%2FbEAIX5rg%3D%3D&u2=xKj3XbmJLjn5Vx5v&width=800') center/cover; border-radius: var(--radius-lg); margin-bottom: var(--space-4);"></div>
+                        <div class="card__icon">🌱</div>
+                        <h3 class="card__title">刑務所出所者向け<br>住宅提供サービス</h3>
+                        <p class="card__description">
+                            刑務所を出所された方々の社会復帰を支援するため、安定した住まいと生活再建のサポートを提供します。
                         </p>
+                        <ul style="list-style: none; padding: 0; margin-top: 1.5rem;">
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 出所後すぐに入居可能</li>
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 社会復帰の土台づくり</li>
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 就労支援との連携</li>
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 生活相談・サポート</li>
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 再犯防止の支援</li>
+                        </ul>
                     </div>
-                    <div class="philosophy-card" role="listitem">
-                        <div class="philosophy-card__icon" aria-hidden="true">
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 24L20 32L36 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <h3 class="philosophy-card__title">再生支援</h3>
-                        <p class="philosophy-card__description">
-                            住まいを通じた社会復帰の土台づくり。長期的な視点でサポート。
+
+                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFF9F5 100%); border: 2px solid rgba(255, 168, 92, 0.2);">
+                        <div style="width: 100%; height: 200px; background: url('https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=80') center/cover; border-radius: var(--radius-lg); margin-bottom: var(--space-4);"></div>
+                        <div class="card__icon">🌙</div>
+                        <h3 class="card__title">ナイトケアハウス<br>運営</h3>
+                        <p class="card__description">
+                            一般社団法人相模原ダルク利用者専用のナイトケアハウスを運営。夜間も安心して過ごせる住まいを提供します。
                         </p>
+                        <ul style="list-style: none; padding: 0; margin-top: 1.5rem;">
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 相模原ダルク利用者専用</li>
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 夜間の安心できる居場所</li>
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ ダルクプログラムとの連携</li>
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 生活リズムのサポート</li>
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 24時間対応体制</li>
+                        </ul>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Service Cards -->
-                <div class="services-grid">
-                    <article class="service-card">
-                        <div class="service-card__number" aria-hidden="true">01</div>
-                        <h3 class="service-card__title">依存症者向け住宅提供</h3>
-                        <ul class="service-card__list">
-                            <li>薬物依存症回復者への住まい</li>
-                            <li>アルコール依存症回復者への住まい</li>
-                            <li>ギャンブル依存症回復者への住まい</li>
-                            <li>安心できる生活環境の提供</li>
-                            <li>再発防止のサポート</li>
-                        </ul>
-                        <a href="#contact" class="service-card__link">
-                            詳しく見る
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </article>
+        <!-- Support Section with Images -->
+        <section id="support" class="section section--cream" style="background: linear-gradient(135deg, rgba(255, 253, 250, 0.98) 0%, rgba(255, 250, 245, 0.98) 100%);">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__badge">Support</span>
+                    <h2 class="section__title">私たちの支援内容</h2>
+                    <p class="section__description">
+                        住まいの提供だけでなく、生活全般にわたる包括的なサポートを行います。
+                    </p>
+                </div>
 
-                    <article class="service-card">
-                        <div class="service-card__number" aria-hidden="true">02</div>
-                        <h3 class="service-card__title">刑務所出所者向け住宅提供</h3>
-                        <ul class="service-card__list">
-                            <li>出所後の安定した住まいの確保</li>
-                            <li>社会復帰のサポート</li>
-                            <li>生活環境の整備</li>
-                            <li>就労支援との連携</li>
-                            <li>再犯防止の支援</li>
+                <div class="grid grid--2">
+                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFFCF9 100%); border: 2px solid rgba(95, 217, 208, 0.2);">
+                        <div style="width: 100%; height: 180px; background: url('https://sspark.genspark.ai/cfimages?u1=X%2FbTTdp66e%2BIeS%2BcUdlCPGq90QvDqzW%2BtV0HNkiHzFWf8FPc5WU9%2FoIqI7uEhR8yBBpfFbmnQP3dZnZZAphAyGLxLNGS73Mw5vsMX5DnL8zVZFV8ZC9WMVXv3%2Fkbc%2F70v3yoGQoAr9L3AEBvDUfC%2Fr4bU6nEiCgL1Yr8aQqLR3M4%3D&u2=Sajme5Sfezbrdg5X&width=800') center/cover; border-radius: var(--radius-lg); margin-bottom: var(--space-4);"></div>
+                        <div class="card__icon">🤝</div>
+                        <h3 class="card__title">生活相談・カウンセリング</h3>
+                        <p class="card__description">
+                            専門スタッフが定期的に面談を行い、生活上の困りごとや不安について相談に乗ります。一人で抱え込まず、いつでもご相談ください。
+                        </p>
+                        <ul style="list-style: none; padding: 0; margin-top: 1.5rem;">
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 定期的な個別面談</li>
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 24時間緊急連絡体制</li>
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ プライバシーの完全保護</li>
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 心のケア・サポート</li>
                         </ul>
-                        <a href="#contact" class="service-card__link">
-                            詳しく見る
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </article>
+                    </div>
 
-                    <article class="service-card">
-                        <div class="service-card__number" aria-hidden="true">03</div>
-                        <h3 class="service-card__title">ナイトケアハウス</h3>
-                        <ul class="service-card__list">
-                            <li>相模原ダルク利用者専用</li>
-                            <li>夜間の安心できる住まい</li>
-                            <li>24時間対応体制</li>
-                            <li>生活リズムのサポート</li>
-                            <li>ダルクプログラムとの連携</li>
+                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFFCF9 100%); border: 2px solid rgba(95, 217, 208, 0.2);">
+                        <div style="width: 100%; height: 180px; background: url('https://sspark.genspark.ai/cfimages?u1=7aCjWjxVFKGvYeaA7IeNxxr18CLBSK5z2KOpOCi0yzKRYvbVGRQEptMH94sH%2FdS3CZjGmjJrRoxj1njHsKvl4V6UwqvhfmQvYP8MlYYX26GxW0z%2BCyS%2Fk%2BCZ5bxAw%2BWtCjA4kW8%2Fc6zCcMpEXP3dWuIVv1fGHf0ELPuXs5t7k30%3D&u2=CZjdZaa%2Bdjn1Rg5o&width=800') center/cover; border-radius: var(--radius-lg); margin-bottom: var(--space-4);"></div>
+                        <div class="card__icon">💼</div>
+                        <h3 class="card__title">就労支援・社会復帰サポート</h3>
+                        <p class="card__description">
+                            就労支援機関と連携し、仕事探しや職業訓練の情報提供を行います。社会復帰への第一歩を全力でサポートします。
+                        </p>
+                        <ul style="list-style: none; padding: 0; margin-top: 1.5rem;">
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 就労支援機関との連携</li>
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 職業訓練情報の提供</li>
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 履歴書・面接サポート</li>
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 就労後のフォローアップ</li>
                         </ul>
-                        <a href="#contact" class="service-card__link">
-                            詳しく見る
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </article>
+                    </div>
 
-                    <article class="service-card">
-                        <div class="service-card__number" aria-hidden="true">04</div>
-                        <h3 class="service-card__title">相談・サポート</h3>
-                        <ul class="service-card__list">
-                            <li>入居前の無料相談</li>
-                            <li>生活環境の設定支援</li>
-                            <li>関連機関との連携</li>
-                            <li>相模原ダルクとの協力</li>
-                            <li>長期的なフォローアップ</li>
+                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFFCF9 100%); border: 2px solid rgba(95, 217, 208, 0.2);">
+                        <div style="width: 100%; height: 180px; background: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80') center/cover; border-radius: var(--radius-lg); margin-bottom: var(--space-4);"></div>
+                        <div class="card__icon">🏥</div>
+                        <h3 class="card__title">医療・福祉機関との連携</h3>
+                        <p class="card__description">
+                            必要に応じて、医療機関や福祉事務所、保護観察所などの関係機関と連携し、総合的なサポート体制を整えます。
+                        </p>
+                        <ul style="list-style: none; padding: 0; margin-top: 1.5rem;">
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 医療機関との連携</li>
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 福祉事務所との協力</li>
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 保護観察所との連携</li>
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 生活保護申請サポート</li>
                         </ul>
-                        <a href="#contact" class="service-card__link">
-                            詳しく見る
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </article>
+                    </div>
+
+                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFFCF9 100%); border: 2px solid rgba(95, 217, 208, 0.2);">
+                        <div style="width: 100%; height: 180px; background: url('https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=800&q=80') center/cover; border-radius: var(--radius-lg); margin-bottom: var(--space-4);"></div>
+                        <div class="card__icon">📚</div>
+                        <h3 class="card__title">生活スキル向上プログラム</h3>
+                        <p class="card__description">
+                            自立した生活を送るために必要なスキルを身につけるプログラムを提供します。料理、家計管理、健康管理など、基本的な生活スキルをサポートします。
+                        </p>
+                        <ul style="list-style: none; padding: 0; margin-top: 1.5rem;">
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 生活習慣の確立サポート</li>
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 家計管理のアドバイス</li>
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 健康管理のサポート</li>
+                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ コミュニケーションスキル向上</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Process Section -->
-        <section id="process" class="process section" aria-labelledby="process-title">
+        <section id="process" class="section section--warm">
             <div class="container">
                 <div class="section__header">
-                    <span class="section__badge">How It Works</span>
-                    <h2 id="process-title" class="section__title">入居までの流れ</h2>
+                    <span class="section__badge">Process</span>
+                    <h2 class="section__title">入居までの流れ</h2>
                     <p class="section__description">
                         安心して入居いただくための、分かりやすいステップをご案内します。<br>
                         各段階で丁寧にサポートいたしますので、ご不明な点はいつでもお問い合わせください。
@@ -332,129 +469,168 @@
                 </div>
 
                 <div class="process-steps">
-                    <article class="process-step">
-                        <div class="process-step__number" aria-label="ステップ1">01</div>
+                    <div class="process-step">
+                        <div class="process-step__number">1</div>
                         <div class="process-step__content">
-                            <div class="process-step__icon" aria-hidden="true">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 8H28C30 8 32 10 32 12V28C32 30 30 32 28 32H12C10 32 8 30 8 28V12C8 10 10 8 12 8Z" stroke="currentColor" stroke-width="2"/>
-                                    <path d="M14 16H26M14 20H26M14 24H22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                </svg>
-                            </div>
                             <h3 class="process-step__title">初回相談（無料）</h3>
                             <p class="process-step__description">
-                                お電話、メール、または来所にて無料相談を承ります。現在の状況やニーズをお聞かせください。プライバシーは厳守いたします。
+                                お電話、メール、または来所にて無料相談を承ります。現在の状況やニーズをお聞かせください。プライバシーは厳守いたします。相談だけでも大歓迎です。まずはお気軽にご連絡ください。
                             </p>
-                            <ul class="process-step__details">
-                                <li>電話: 042-704-8308（平日 9:00〜18:00）</li>
-                                <li>メール: info@lumirize.com（24時間受付）</li>
-                                <li>所要時間: 約30分〜1時間</li>
+                            <ul class="process-step__list">
+                                <li>📞 電話: 042-704-8308（平日 9:00〜18:00）</li>
+                                <li>📧 メール: info@lumirize.com（24時間受付）</li>
+                                <li>⏰ 所要時間: 約30分〜1時間</li>
+                                <li>💬 匿名での相談も可能です</li>
                             </ul>
                         </div>
-                    </article>
+                    </div>
 
-                    <article class="process-step">
-                        <div class="process-step__number" aria-label="ステップ2">02</div>
+                    <div class="process-step">
+                        <div class="process-step__number">2</div>
                         <div class="process-step__content">
-                            <div class="process-step__icon" aria-hidden="true">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="8" y="8" width="24" height="28" stroke="currentColor" stroke-width="2"/>
-                                    <path d="M14 16H26M14 22H26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                </svg>
-                            </div>
                             <h3 class="process-step__title">必要書類の準備</h3>
                             <p class="process-step__description">
-                                入居審査に必要な書類をご案内します。書類の準備が難しい場合もサポートいたしますので、ご相談ください。
+                                入居に必要な書類をご案内します。書類の取得方法が分からない場合も、丁寧にサポートいたします。生活保護受給中の方、保証人がいない方も、まずはご相談ください。
                             </p>
-                            <ul class="process-step__details">
-                                <li>身分証明書（運転免許証・保険証等）</li>
-                                <li>印鑑</li>
-                                <li>緊急連絡先情報</li>
-                                <li>※その他、状況に応じて必要書類をご案内します</li>
+                            <ul class="process-step__list">
+                                <li>身分証明書（運転免許証、保険証など）</li>
+                                <li>収入証明書（給与明細、年金証書など）</li>
+                                <li>生活保護受給証明書（該当者のみ）</li>
+                                <li>その他、状況に応じた書類</li>
+                                <li>書類取得のサポートも行います</li>
                             </ul>
                         </div>
-                    </article>
+                    </div>
 
-                    <article class="process-step">
-                        <div class="process-step__number" aria-label="ステップ3">03</div>
+                    <div class="process-step">
+                        <div class="process-step__number">3</div>
                         <div class="process-step__content">
-                            <div class="process-step__icon" aria-hidden="true">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6 18L20 6L34 18V32C34 34 32 36 30 36H10C8 36 6 34 6 32V18Z" stroke="currentColor" stroke-width="2"/>
-                                    <path d="M16 36V22H24V36" stroke="currentColor" stroke-width="2"/>
-                                </svg>
-                            </div>
                             <h3 class="process-step__title">物件見学・面談</h3>
                             <p class="process-step__description">
-                                実際の住宅をご見学いただき、生活環境を確認していただけます。スタッフとの面談も行います。
+                                実際の物件をご見学いただき、生活環境や周辺施設を確認していただきます。同時に、詳細な面談を行い、あなたのニーズに最適な住まいをご提案します。
                             </p>
-                            <ul class="process-step__details">
-                                <li>住宅の外観・内観のご案内</li>
-                                <li>周辺環境・アクセスの確認</li>
-                                <li>生活ルール・サポート内容の説明</li>
-                                <li>ご質問・ご不安な点の解消</li>
+                            <ul class="process-step__list">
+                                <li>複数の物件から選択可能</li>
+                                <li>周辺環境・交通アクセスの確認</li>
+                                <li>生活に必要な施設の案内</li>
+                                <li>個別のニーズに合わせた提案</li>
+                                <li>質問・相談は何でもお答えします</li>
                             </ul>
                         </div>
-                    </article>
+                    </div>
 
-                    <article class="process-step">
-                        <div class="process-step__number" aria-label="ステップ4">04</div>
+                    <div class="process-step">
+                        <div class="process-step__number">4</div>
                         <div class="process-step__content">
-                            <div class="process-step__icon" aria-hidden="true">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10 20L16 26L30 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="2"/>
-                                </svg>
-                            </div>
-                            <h3 class="process-step__title">入居審査・契約</h3>
+                            <h3 class="process-step__title">入居審査・契約手続き</h3>
                             <p class="process-step__description">
-                                入居審査を行い、問題なければ契約手続きに進みます。契約内容を丁寧にご説明いたします。
+                                書類を基に入居審査を行います（通常3〜7営業日）。審査通過後、賃貸借契約を締結します。契約内容は丁寧に説明し、ご納得いただいた上で進めます。
                             </p>
-                            <ul class="process-step__details">
-                                <li>審査期間: 通常3〜7営業日</li>
-                                <li>契約書の作成・説明</li>
+                            <ul class="process-step__list">
+                                <li>審査期間: 3〜7営業日</li>
+                                <li>緊急の場合は優先対応可能</li>
+                                <li>契約内容の詳細説明</li>
                                 <li>初期費用のご案内</li>
-                                <li>入居日の調整</li>
+                                <li>分割払い等の相談も可能</li>
                             </ul>
                         </div>
-                    </article>
+                    </div>
 
-                    <article class="process-step">
-                        <div class="process-step__number" aria-label="ステップ5">05</div>
+                    <div class="process-step">
+                        <div class="process-step__number">5</div>
                         <div class="process-step__content">
-                            <div class="process-step__icon" aria-hidden="true">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="20" cy="14" r="6" stroke="currentColor" stroke-width="2"/>
-                                    <path d="M6 34C6 26 12 24 20 24C28 24 34 26 34 34" stroke="currentColor" stroke-width="2"/>
-                                </svg>
-                            </div>
                             <h3 class="process-step__title">入居・生活開始</h3>
                             <p class="process-step__description">
-                                入居日に鍵をお渡しし、生活を開始していただきます。入居後も継続的なサポートを提供します。
+                                いよいよ新しい生活のスタートです。入居後も定期的なサポートを行い、安心して暮らせる環境を維持します。困ったことがあれば、いつでもご相談ください。
                             </p>
-                            <ul class="process-step__details">
-                                <li>鍵の受け渡し・住宅説明</li>
-                                <li>生活に必要な情報のご案内</li>
-                                <li>定期的な面談・サポート</li>
+                            <ul class="process-step__list">
+                                <li>入居手続きの完全サポート</li>
+                                <li>生活必需品の準備アドバイス</li>
+                                <li>ライフライン（電気・ガス・水道）の手続き支援</li>
+                                <li>定期的な訪問・面談</li>
                                 <li>24時間緊急連絡体制</li>
+                                <li>長期的なフォローアップ</li>
                             </ul>
                         </div>
-                    </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stories Section with Images -->
+        <section id="stories" class="section section--gradient" style="background: linear-gradient(180deg, rgba(255, 252, 249, 0.98) 0%, rgba(255, 253, 250, 0.98) 100%);">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__badge">Stories</span>
+                    <h2 class="section__title">回復の物語</h2>
+                    <p class="section__description">
+                        実際にルミライズの支援を受けた方々の声です。<br>
+                        一人ひとりに、それぞれの回復の物語があります。
+                    </p>
                 </div>
 
-                <div class="process-cta">
-                    <p class="process-cta__text">まずはお気軽にご相談ください。一緒に最適な解決策を見つけましょう。</p>
-                    <a href="#contact" class="btn btn--primary btn--large">無料相談を予約する</a>
+                <div class="grid grid--3">
+                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFF9F5 100%); border: 2px solid rgba(255, 200, 80, 0.3);">
+                        <div style="width: 100%; height: 200px; background: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80') center/cover; border-radius: var(--radius-full); margin: 0 auto var(--space-4); width: 150px; height: 150px; box-shadow: 0 8px 24px rgba(255, 168, 92, 0.3);"></div>
+                        <div class="card__icon">💚</div>
+                        <h3 class="card__title">Aさん（40代男性）</h3>
+                        <p class="card__description" style="font-style: italic; color: #8C7A6A; margin-bottom: 1.5rem;">
+                            「20年以上の薬物依存から回復の道へ」
+                        </p>
+                        <p class="card__description">
+                            薬物依存で家族も仕事も失い、ホームレス生活を送っていました。ダルクに入所後、ルミライズで住まいを提供してもらい、やっと人間らしい生活を取り戻せました。今は就労継続支援B型で働きながら、回復プログラムを続けています。
+                        </p>
+                        <p class="card__description" style="color: #FF8C42; font-weight: 600;">
+                            「住む場所があるって、こんなに心が安定するんだと初めて知りました。」
+                        </p>
+                    </div>
+
+                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFF9F5 100%); border: 2px solid rgba(255, 200, 80, 0.3);">
+                        <div style="width: 100%; height: 200px; background: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=80') center/cover; border-radius: var(--radius-full); margin: 0 auto var(--space-4); width: 150px; height: 150px; box-shadow: 0 8px 24px rgba(255, 168, 92, 0.3);"></div>
+                        <div class="card__icon">💙</div>
+                        <h3 class="card__title">Bさん（30代男性）</h3>
+                        <p class="card__description" style="font-style: italic; color: #8C7A6A; margin-bottom: 1.5rem;">
+                            「出所後、社会復帰への第一歩」
+                        </p>
+                        <p class="card__description">
+                            刑務所を出所したものの、住む場所がなく途方に暮れていました。ルミライズのスタッフが親身になって相談に乗ってくれ、すぐに住まいを見つけてくれました。今は工場で働きながら、自立に向けて頑張っています。
+                        </p>
+                        <p class="card__description" style="color: #FF8C42; font-weight: 600;">
+                            「誰も信じられなかった自分を、信じてくれる人がいました。」
+                        </p>
+                    </div>
+
+                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFF9F5 100%); border: 2px solid rgba(255, 200, 80, 0.3);">
+                        <div style="width: 100%; height: 200px; background: url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80') center/cover; border-radius: var(--radius-full); margin: 0 auto var(--space-4); width: 150px; height: 150px; box-shadow: 0 8px 24px rgba(255, 168, 92, 0.3);"></div>
+                        <div class="card__icon">💛</div>
+                        <h3 class="card__title">Cさん（50代男性）</h3>
+                        <p class="card__description" style="font-style: italic; color: #8C7A6A; margin-bottom: 1.5rem;">
+                            「アルコール依存からの回復、家族との再会」
+                        </p>
+                        <p class="card__description">
+                            アルコール依存で家族と離れ、仕事も失いました。相模原ダルクで回復プログラムを受けながら、ルミライズのナイトケアハウスで生活。スタッフの支えで断酒を続け、1年後には家族と再会できました。
+                        </p>
+                        <p class="card__description" style="color: #FF8C42; font-weight: 600;">
+                            「もう一度、家族と笑顔で話せる日が来るとは思いませんでした。」
+                        </p>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <p style="font-size: 1.25rem; color: #5C4A3A; line-height: 1.8;">
+                        ※プライバシー保護のため、内容の一部を変更しています。<br>
+                        あなたにも、新しい物語の始まりが待っています。
+                    </p>
                 </div>
             </div>
         </section>
 
         <!-- FAQ Section -->
-        <section id="faq" class="faq section section--dark" aria-labelledby="faq-title">
+        <section id="faq" class="section section--cream">
             <div class="container">
                 <div class="section__header">
                     <span class="section__badge">FAQ</span>
-                    <h2 id="faq-title" class="section__title">よくある質問</h2>
+                    <h2 class="section__title">よくある質問</h2>
                     <p class="section__description">
                         皆さまからよくいただくご質問をまとめました。<br>
                         その他のご質問は、お気軽にお問い合わせください。
@@ -465,351 +641,239 @@
                     <h3 class="faq-category">入居について</h3>
                     
                     <div class="faq-item">
-                        <button class="faq-item__question" aria-expanded="false" aria-controls="faq-1">
-                            <span class="faq-item__question-text">入居条件はありますか？</span>
-                            <svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                        <button class="faq-item__question" onclick="toggleFAQ(this)">
+                            <span>どのような方が入居できますか？</span>
+                            <span style="font-size: 1.5rem;">+</span>
                         </button>
-                        <div id="faq-1" class="faq-item__answer" role="region" aria-hidden="true">
-                            <p>依存症からの回復を目指す意思がある方、または刑務所出所後の社会復帰を目指す方が対象です。年齢・性別・国籍は問いません。詳細は個別にご相談ください。</p>
+                        <div class="faq-item__answer">
+                            <p>依存症からの回復を目指す方、刑務所を出所された方、行き場のない方など、住まいを必要としている方が対象です。年齢・性別・国籍は問いません。また、生活保護を受給されている方も入居可能です。まずはお気軽にご相談ください。一人ひとりの状況に合わせて、最適な支援を提供いたします。</p>
                         </div>
                     </div>
 
                     <div class="faq-item">
-                        <button class="faq-item__question" aria-expanded="false" aria-controls="faq-2">
-                            <span class="faq-item__question-text">入居審査には何日かかりますか？</span>
-                            <svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                        <button class="faq-item__question" onclick="toggleFAQ(this)">
+                            <span>必ず入居できますか？</span>
+                            <span style="font-size: 1.5rem;">+</span>
                         </button>
-                        <div id="faq-2" class="faq-item__answer" role="region" aria-hidden="true">
-                            <p>通常、書類提出から3〜7営業日程度で審査結果をお知らせします。緊急の場合は優先的に対応いたしますので、ご相談ください。</p>
+                        <div class="faq-item__answer">
+                            <p>入居には審査がありますが、できる限り多くの方を受け入れられるよう努力しています。審査では、回復への意欲や生活の安定性などを確認させていただきます。万が一、当社での受け入れが難しい場合でも、他の支援機関をご紹介するなど、最後まで責任を持ってサポートいたします。</p>
                         </div>
                     </div>
 
                     <div class="faq-item">
-                        <button class="faq-item__question" aria-expanded="false" aria-controls="faq-3">
-                            <span class="faq-item__question-text">保証人は必要ですか？</span>
-                            <svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                        <button class="faq-item__question" onclick="toggleFAQ(this)">
+                            <span>相談時に必要な情報は何ですか？</span>
+                            <span style="font-size: 1.5rem;">+</span>
                         </button>
-                        <div id="faq-3" class="faq-item__answer" role="region" aria-hidden="true">
-                            <p>原則として保証人をお願いしていますが、保証人が見つからない場合も柔軟に対応いたします。まずはご相談ください。</p>
+                        <div class="faq-item__answer">
+                            <p>初回相談では、現在の生活状況、住まいを必要とする理由、収入の有無、依存症の治療状況（該当する場合）などをお聞きします。ただし、答えられない質問がある場合も無理に答える必要はありません。まずはあなたの状況を教えてください。プライバシーは厳守いたします。</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-item__question" onclick="toggleFAQ(this)">
+                            <span>保証人は必要ですか？</span>
+                            <span style="font-size: 1.5rem;">+</span>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p>原則として保証人をお願いしていますが、保証人が見つからない場合も柔軟に対応いたします。保証会社の利用や、関係機関との連携による対応も可能です。まずはご相談ください。あなたの状況に合わせた最適な方法をご提案いたします。</p>
                         </div>
                     </div>
 
                     <h3 class="faq-category">費用について</h3>
 
                     <div class="faq-item">
-                        <button class="faq-item__question" aria-expanded="false" aria-controls="faq-4">
-                            <span class="faq-item__question-text">入居にかかる費用はどのくらいですか？</span>
-                            <svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                        <button class="faq-item__question" onclick="toggleFAQ(this)">
+                            <span>入居にかかる費用はどのくらいですか？</span>
+                            <span style="font-size: 1.5rem;">+</span>
                         </button>
-                        <div id="faq-4" class="faq-item__answer" role="region" aria-hidden="true">
-                            <p>物件により異なりますが、初期費用（敷金・礼金等）と月額家賃が必要です。生活保護受給者の方もご相談可能です。詳細はお問い合わせください。</p>
+                        <div class="faq-item__answer">
+                            <p>物件により異なりますが、一般的に初期費用（敷金・礼金・仲介手数料等）と月額家賃が必要です。初期費用は物件により異なりますので、個別にご案内いたします。生活保護を受給されている方は、住宅扶助の範囲内で対応可能な物件もご紹介できます。分割払いなどのご相談にも応じますので、お気軽にご相談ください。</p>
                         </div>
                     </div>
 
                     <div class="faq-item">
-                        <button class="faq-item__question" aria-expanded="false" aria-controls="faq-5">
-                            <span class="faq-item__question-text">生活保護を受給していても入居できますか？</span>
-                            <svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                        <button class="faq-item__question" onclick="toggleFAQ(this)">
+                            <span>生活保護を受給していても入居できますか？</span>
+                            <span style="font-size: 1.5rem;">+</span>
                         </button>
-                        <div id="faq-5" class="faq-item__answer" role="region" aria-hidden="true">
-                            <p>はい、入居可能です。生活保護受給者の方の入居実績も多数あります。福祉事務所との連携もサポートいたします。</p>
+                        <div class="faq-item__answer">
+                            <p>はい、入居可能です。生活保護受給者の方の入居実績も多数あります。住宅扶助の範囲内で入居できる物件もご用意しております。また、福祉事務所との連携もサポートいたします。生活保護の申請がまだの方には、申請のサポートも行いますので、ご安心ください。</p>
                         </div>
                     </div>
 
                     <div class="faq-item">
-                        <button class="faq-item__question" aria-expanded="false" aria-controls="faq-6">
-                            <span class="faq-item__question-text">支払い方法は？</span>
-                            <svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                        <button class="faq-item__question" onclick="toggleFAQ(this)">
+                            <span>月額家賃以外に費用はかかりますか？</span>
+                            <span style="font-size: 1.5rem;">+</span>
                         </button>
-                        <div id="faq-6" class="faq-item__answer" role="region" aria-hidden="true">
-                            <p>銀行振込が基本ですが、その他の支払い方法についてもご相談に応じます。分割払いなどもケースバイケースで対応可能です。</p>
+                        <div class="faq-item__answer">
+                            <p>月額家賃の他に、光熱費（電気・ガス・水道）、インターネット回線費用（利用する場合）などが別途必要です。また、物件によっては共益費や管理費がかかる場合もあります。入居前に詳細な費用をご説明しますので、ご安心ください。予想外の費用が発生することはありません。</p>
                         </div>
                     </div>
 
                     <h3 class="faq-category">生活サポートについて</h3>
 
                     <div class="faq-item">
-                        <button class="faq-item__question" aria-expanded="false" aria-controls="faq-7">
-                            <span class="faq-item__question-text">どのようなサポートが受けられますか？</span>
-                            <svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                        <button class="faq-item__question" onclick="toggleFAQ(this)">
+                            <span>入居後、どのようなサポートが受けられますか？</span>
+                            <span style="font-size: 1.5rem;">+</span>
                         </button>
-                        <div id="faq-7" class="faq-item__answer" role="region" aria-hidden="true">
-                            <p>定期的な面談、生活相談、就労支援、医療・福祉機関との連携など、包括的なサポートを提供します。24時間緊急連絡体制も整えています。</p>
+                        <div class="faq-item__answer">
+                            <p>定期的な面談、生活相談、就労支援の情報提供、医療・福祉機関との連携調整など、包括的なサポートを提供します。また、24時間緊急連絡体制も整えており、困ったことがあればいつでもご相談いただけます。生活スキル向上のためのアドバイスや、必要に応じて各種手続きのサポートも行います。</p>
                         </div>
                     </div>
 
                     <div class="faq-item">
-                        <button class="faq-item__question" aria-expanded="false" aria-controls="faq-8">
-                            <span class="faq-item__question-text">ナイトケアハウスとは何ですか？</span>
-                            <svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                        <button class="faq-item__question" onclick="toggleFAQ(this)">
+                            <span>ナイトケアハウスとは何ですか？</span>
+                            <span style="font-size: 1.5rem;">+</span>
                         </button>
-                        <div id="faq-8" class="faq-item__answer" role="region" aria-hidden="true">
-                            <p>相模原ダルク利用者専用の夜間ケア施設です。ダルクプログラムと連携し、夜間も安心して過ごせる住まいを提供しています。</p>
+                        <div class="faq-item__answer">
+                            <p>ナイトケアハウスは、相模原ダルク利用者専用の夜間ケア施設です。日中はダルクのプログラムに参加し、夜間はナイトケアハウスで過ごすことで、安定した生活リズムを作ることができます。24時間体制でスタッフがサポートし、回復プログラムとの連携も密に行っています。</p>
                         </div>
                     </div>
 
                     <div class="faq-item">
-                        <button class="faq-item__question" aria-expanded="false" aria-controls="faq-9">
-                            <span class="faq-item__question-text">プライバシーは守られますか？</span>
-                            <svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                        <button class="faq-item__question" onclick="toggleFAQ(this)">
+                            <span>プライバシーは守られますか？</span>
+                            <span style="font-size: 1.5rem;">+</span>
                         </button>
-                        <div id="faq-9" class="faq-item__answer" role="region" aria-hidden="true">
-                            <p>はい、個人情報保護を徹底しています。相談内容や入居情報は厳格に管理し、ご本人の同意なく第三者に開示することはありません。</p>
+                        <div class="faq-item__answer">
+                            <p>はい、個人情報保護を徹底しています。相談内容や入居情報は厳格に管理し、ご本人の同意なく第三者に開示することは一切ありません。スタッフ全員が守秘義務を厳守し、安心してご相談いただける環境を整えています。あなたのプライバシーを最優先に考えています。</p>
                         </div>
                     </div>
 
                     <h3 class="faq-category">相模原ダルクとの連携について</h3>
 
                     <div class="faq-item">
-                        <button class="faq-item__question" aria-expanded="false" aria-controls="faq-10">
-                            <span class="faq-item__question-text">相模原ダルクの利用者でなくても入居できますか？</span>
-                            <svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                        <button class="faq-item__question" onclick="toggleFAQ(this)">
+                            <span>相模原ダルクの利用者でなくても入居できますか？</span>
+                            <span style="font-size: 1.5rem;">+</span>
                         </button>
-                        <div id="faq-10" class="faq-item__answer" role="region" aria-hidden="true">
-                            <p>はい、入居可能です。ナイトケアハウスは相模原ダルク利用者専用ですが、その他の住宅は依存症回復者や刑務所出所者であれば、ダルク利用の有無に関わらずご利用いただけます。</p>
+                        <div class="faq-item__answer">
+                            <p>はい、入居可能です。ナイトケアハウスは相模原ダルク利用者専用ですが、その他の住宅提供サービスは、依存症回復者や刑務所出所者であれば、ダルク利用の有無に関わらずご利用いただけます。他の支援機関を利用されている方も歓迎します。</p>
                         </div>
                     </div>
 
                     <div class="faq-item">
-                        <button class="faq-item__question" aria-expanded="false" aria-controls="faq-11">
-                            <span class="faq-item__question-text">ダルクプログラムへの参加は必須ですか？</span>
-                            <svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                        <button class="faq-item__question" onclick="toggleFAQ(this)">
+                            <span>ダルクプログラムへの参加は必須ですか？</span>
+                            <span style="font-size: 1.5rem;">+</span>
                         </button>
-                        <div id="faq-11" class="faq-item__answer" role="region" aria-hidden="true">
-                            <p>ナイトケアハウス以外の住宅では必須ではありません。ただし、回復プログラムへの参加を推奨しており、希望者には相模原ダルクをご紹介いたします。</p>
+                        <div class="faq-item__answer">
+                            <p>ナイトケアハウス以外の住宅では必須ではありません。ただし、依存症からの回復には専門的なプログラムへの参加が効果的です。相模原ダルクや他の回復支援施設のご紹介も可能ですので、希望される方はお気軽にご相談ください。</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="faq-cta">
-                    <p class="faq-cta__text">その他のご質問や詳しい内容は、お気軽にお問い合わせください。</p>
-                    <a href="#contact" class="btn btn--primary btn--large">お問い合わせ</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Emergency Support Section -->
-        <section class="emergency section" aria-labelledby="emergency-title">
-            <div class="container">
-                <div class="emergency-card">
-                    <div class="emergency-card__icon" aria-hidden="true">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
-                            <path d="M24 14V26M24 30V34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                    <h2 id="emergency-title" class="emergency-card__title">緊急でお困りの方へ</h2>
-                    <p class="emergency-card__description">
-                        今すぐ住まいが必要な方、緊急のご相談がある方は、お電話ください。<br>
-                        できる限り迅速に対応いたします。
+                <div style="text-align: center; margin-top: 4rem; padding: 3rem; background: white; border-radius: 1rem; box-shadow: 0 4px 12px rgba(255, 140, 66, 0.15);">
+                    <p style="font-size: 1.25rem; color: #5C4A3A; margin-bottom: 2rem;">
+                        その他のご質問や詳しい内容は、お気軽にお問い合わせください。
                     </p>
-                    <a href="tel:042-704-8308" class="btn btn--emergency btn--large">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path d="M22 16.92V19.92C22 20.52 21.55 21.03 20.96 21.11C20.6 21.15 20.22 21.17 19.83 21.17C10.15 21.17 2.83 13.85 2.83 4.17C2.83 3.78 2.85 3.4 2.89 3.04C2.97 2.45 3.48 2 4.08 2H7.08C7.62 2 8.07 2.39 8.16 2.91C8.24 3.4 8.35 3.88 8.48 4.35C8.65 4.94 8.5 5.58 8.07 6.01L6.47 7.61C8.05 10.69 10.89 13.53 13.97 15.11L15.57 13.51C16 13.08 16.64 12.93 17.23 13.1C17.7 13.23 18.18 13.34 18.67 13.42C19.19 13.51 19.58 13.96 19.58 14.5V17.5C19.58 18.05 19.28 18.54 18.84 18.76L18.42 18.98L17.83 19.28C17.45 19.47 17.01 19.58 16.55 19.58C15.77 19.58 15 19.35 14.33 18.89L13.97 18.67L13.32 18.26L12.31 17.61L11.01 16.69L9.5 15.53L7.84 14.18L6.11 12.67L4.45 11.05L3.03 9.36L2.04 8.17L1.36 7.24L0.92 6.57L0.58 5.97C0.21 5.32 0 4.59 0 3.83C0 3.37 0.11 2.93 0.3 2.55L0.6 1.96L0.82 1.54C1.04 1.1 1.53 0.8 2.08 0.8H5.08C5.62 0.8 6.07 1.19 6.16 1.71C6.24 2.2 6.35 2.68 6.48 3.15C6.65 3.74 6.5 4.38 6.07 4.81L4.47 6.41C6.05 9.49 8.89 12.33 11.97 13.91L13.57 12.31C14 11.88 14.64 11.73 15.23 11.9C15.7 12.03 16.18 12.14 16.67 12.22C17.19 12.31 17.58 12.76 17.58 13.3V16.3C17.58 16.85 17.28 17.34 16.84 17.56L16.42 17.78L15.83 18.08C15.45 18.27 15.01 18.38 14.55 18.38C13.77 18.38 13 18.15 12.33 17.69L11.97 17.47L11.32 17.06L10.31 16.41L9.01 15.49L7.5 14.33L5.84 12.98L4.11 11.47L2.45 9.85L1.03 8.16L0.04 6.97L-0.64 6.04L-1.08 5.37L-1.42 4.77" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        042-704-8308
-                    </a>
+                    <a href="#contact" class="btn btn--primary btn--large">お問い合わせはこちら</a>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="contact section section--dark" aria-labelledby="contact-title">
+        <section id="contact" class="section section--warm">
             <div class="container">
                 <div class="section__header">
                     <span class="section__badge">Contact</span>
-                    <h2 id="contact-title" class="section__title">お問い合わせ・相談窓口</h2>
+                    <h2 class="section__title">お問い合わせ・相談窓口</h2>
                     <p class="section__description">
                         住まいに関するお困りごと、入居相談など、どんな小さなことでもお気軽にご相談ください。<br>
-                        専門スタッフが丁寧に対応いたします。
+                        専門スタッフが丁寧に対応いたします。秘密は厳守します。
                     </p>
                 </div>
 
                 <div class="contact-grid">
                     <div class="contact-info">
                         <div class="contact-card">
-                            <div class="contact-card__icon" aria-hidden="true">
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M28 20.92V23.92C28 24.52 27.55 25.03 26.96 25.11C26.6 25.15 26.22 25.17 25.83 25.17C16.15 25.17 8.83 17.85 8.83 8.17C8.83 7.78 8.85 7.4 8.89 7.04C8.97 6.45 9.48 6 10.08 6H13.08C13.62 6 14.07 6.39 14.16 6.91C14.24 7.4 14.35 7.88 14.48 8.35C14.65 8.94 14.5 9.58 14.07 10.01L12.47 11.61C14.05 14.69 16.89 17.53 19.97 19.11L21.57 17.51C22 17.08 22.64 16.93 23.23 17.1C23.7 17.23 24.18 17.34 24.67 17.42C25.19 17.51 25.58 17.96 25.58 18.5V21.5C25.58 22.05 25.28 22.54 24.84 22.76" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
-                            <h3 class="contact-card__title">電話・FAX</h3>
-                            <div class="contact-card__details">
-                                <p><strong>Tel:</strong> <a href="tel:042-704-8308">042-704-8308</a></p>
-                                <p><strong>Fax:</strong> 042-707-0392</p>
-                            </div>
-                            <p class="contact-card__hours">受付時間: 9:00〜18:00（平日）</p>
-                        </div>
-
-                        <div class="contact-card">
-                            <div class="contact-card__icon" aria-hidden="true">
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="4" y="8" width="24" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
-                                    <path d="M4 10L16 17L28 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
-                            <h3 class="contact-card__title">メール</h3>
-                            <div class="contact-card__details">
-                                <p><a href="mailto:info@lumirize.com">info@lumirize.com</a></p>
-                            </div>
-                            <p class="contact-card__hours">24時間受付・48時間以内に返信</p>
-                        </div>
-
-                        <div class="contact-card">
-                            <div class="contact-card__icon" aria-hidden="true">
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 28C16 28 26 21 26 13C26 7.5 21.5 4 16 4C10.5 4 6 7.5 6 13C6 21 16 28 16 28Z" stroke="currentColor" stroke-width="2"/>
-                                    <circle cx="16" cy="13" r="3" stroke="currentColor" stroke-width="2"/>
-                                </svg>
-                            </div>
+                            <div class="contact-card__icon">📍</div>
                             <h3 class="contact-card__title">所在地</h3>
-                            <div class="contact-card__details">
-                                <p>〒252-0237<br>
-                                神奈川県相模原市中央区<br>
-                                千代田3-3-20</p>
-                            </div>
+                            <p style="margin: 1rem 0; color: #5C4A3A;">
+                                〒252-0237<br>
+                                神奈川県相模原市中央区千代田3-3-20
+                            </p>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-card__icon">📞</div>
+                            <h3 class="contact-card__title">電話・FAX</h3>
+                            <p style="margin: 1rem 0; color: #5C4A3A;">
+                                <strong>TEL:</strong> <a href="tel:042-704-8308" style="color: #FF8C42; font-weight: 600;">042-704-8308</a><br>
+                                <strong>FAX:</strong> 042-707-0392
+                            </p>
+                            <p style="font-size: 0.9rem; color: #8C7A6A;">受付時間: 9:00〜18:00（平日）</p>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-card__icon">📧</div>
+                            <h3 class="contact-card__title">E-mail</h3>
+                            <p style="margin: 1rem 0;">
+                                <a href="mailto:info@lumirize.com" style="color: #FF8C42; font-weight: 600;">info@lumirize.com</a>
+                            </p>
+                            <p style="font-size: 0.9rem; color: #8C7A6A;">24時間受付・48時間以内に返信</p>
+                        </div>
+
+                        <div style="padding: 2rem; background: linear-gradient(135deg, #FFE8DC 0%, #FFD6C3 100%); border-radius: 1rem; margin-top: 2rem;">
+                            <h4 style="color: #FF8C42; font-size: 1.25rem; margin-bottom: 1rem;">緊急の方へ</h4>
+                            <p style="color: #5C4A3A; line-height: 1.8; margin-bottom: 1.5rem;">
+                                今すぐ住まいが必要な方、緊急のご相談がある方は、お電話ください。できる限り迅速に対応いたします。
+                            </p>
+                            <a href="tel:042-704-8308" class="btn btn--primary" style="width: 100%;">
+                                📞 042-704-8308
+                            </a>
                         </div>
                     </div>
 
-                    <div class="contact-form-container">
-                        <h3 class="contact-form__title">お問い合わせフォーム</h3>
-                        <p class="contact-form__description">
+                    <div class="contact-form">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: #FF8C42;">お問い合わせフォーム</h3>
+                        <p style="color: #8C7A6A; margin-bottom: 2rem;">
                             以下のフォームからもお問い合わせいただけます。内容を確認次第、担当者よりご連絡いたします。
                         </p>
-                        
-                        <form id="contact-form" class="contact-form" novalidate>
+                        <form id="contact-form">
                             <div class="form-group">
-                                <label for="name" class="form-label">
-                                    お名前 <span class="form-required" aria-label="必須">*</span>
-                                </label>
-                                <input 
-                                    type="text" 
-                                    id="name" 
-                                    name="name" 
-                                    class="form-input" 
-                                    required 
-                                    aria-required="true"
-                                    aria-describedby="name-error"
-                                >
-                                <span id="name-error" class="form-error" role="alert"></span>
+                                <label class="form-label" for="name">お名前（必須）</label>
+                                <input type="text" id="name" class="form-input" required placeholder="山田 太郎">
                             </div>
 
                             <div class="form-group">
-                                <label for="email" class="form-label">
-                                    メールアドレス <span class="form-required" aria-label="必須">*</span>
-                                </label>
-                                <input 
-                                    type="email" 
-                                    id="email" 
-                                    name="email" 
-                                    class="form-input" 
-                                    required 
-                                    aria-required="true"
-                                    aria-describedby="email-error"
-                                >
-                                <span id="email-error" class="form-error" role="alert"></span>
+                                <label class="form-label" for="email">メールアドレス（必須）</label>
+                                <input type="email" id="email" class="form-input" required placeholder="example@email.com">
                             </div>
 
                             <div class="form-group">
-                                <label for="phone" class="form-label">
-                                    電話番号 <span class="form-optional">(任意)</span>
-                                </label>
-                                <input 
-                                    type="tel" 
-                                    id="phone" 
-                                    name="phone" 
-                                    class="form-input"
-                                    aria-describedby="phone-error"
-                                >
-                                <span id="phone-error" class="form-error" role="alert"></span>
+                                <label class="form-label" for="phone">電話番号</label>
+                                <input type="tel" id="phone" class="form-input" placeholder="090-1234-5678">
                             </div>
 
                             <div class="form-group">
-                                <label for="inquiry-type" class="form-label">
-                                    相談内容 <span class="form-required" aria-label="必須">*</span>
-                                </label>
-                                <select 
-                                    id="inquiry-type" 
-                                    name="inquiry-type" 
-                                    class="form-select" 
-                                    required 
-                                    aria-required="true"
-                                    aria-describedby="inquiry-type-error"
-                                >
+                                <label class="form-label" for="subject">お問い合わせ種別</label>
+                                <select id="subject" class="form-input">
                                     <option value="">選択してください</option>
-                                    <option value="addiction">依存症回復支援</option>
-                                    <option value="prison">刑務所出所者支援</option>
-                                    <option value="nightcare">ナイトケアハウス</option>
+                                    <option value="housing">住宅提供サービスについて</option>
+                                    <option value="addiction">依存症者向け住宅について</option>
+                                    <option value="exconvict">刑務所出所者向け住宅について</option>
+                                    <option value="nightcare">ナイトケアハウスについて</option>
                                     <option value="other">その他</option>
                                 </select>
-                                <span id="inquiry-type-error" class="form-error" role="alert"></span>
                             </div>
 
                             <div class="form-group">
-                                <label for="message" class="form-label">
-                                    お問い合わせ内容 <span class="form-required" aria-label="必須">*</span>
-                                </label>
-                                <textarea 
-                                    id="message" 
-                                    name="message" 
-                                    class="form-textarea" 
-                                    rows="6" 
-                                    required 
-                                    aria-required="true"
-                                    aria-describedby="message-error"
-                                ></textarea>
-                                <span id="message-error" class="form-error" role="alert"></span>
+                                <label class="form-label" for="message">お問い合わせ内容（必須）</label>
+                                <textarea id="message" class="form-textarea" required placeholder="お問い合わせ内容をご記入ください"></textarea>
                             </div>
 
-                            <div class="form-group">
-                                <label class="form-checkbox">
-                                    <input 
-                                        type="checkbox" 
-                                        id="privacy" 
-                                        name="privacy" 
-                                        required 
-                                        aria-required="true"
-                                        aria-describedby="privacy-error"
-                                    >
-                                    <span class="form-checkbox__label">
-                                        プライバシーポリシーに同意する <span class="form-required" aria-label="必須">*</span>
-                                    </span>
-                                </label>
-                                <span id="privacy-error" class="form-error" role="alert"></span>
-                            </div>
+                            <p style="font-size: 0.9rem; color: #8C7A6A; margin-bottom: 1.5rem;">
+                                ※個人情報は厳重に管理し、お問い合わせ対応以外の目的で使用することはありません。
+                            </p>
 
-                            <button type="submit" class="btn btn--primary btn--large btn--block">
+                            <button type="submit" class="btn btn--primary btn--large" style="width: 100%;">
                                 送信する
                             </button>
-
-                            <div id="form-success" class="form-success" role="alert" aria-live="polite" style="display: none;">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                    <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <p>お問い合わせありがとうございます。<br>担当者より2営業日以内にご連絡いたします。</p>
-                            </div>
                         </form>
                     </div>
                 </div>
@@ -818,79 +882,251 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer" role="contentinfo">
+    <footer class="footer">
         <div class="container">
-            <div class="footer__main">
-                <div class="footer__brand">
-                    <div class="footer__logo">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <rect x="8" y="12" width="6" height="20" transform="rotate(-45 8 12)" fill="#999"/>
-                            <rect x="18" y="7" width="5" height="16" transform="rotate(-45 18 7)" fill="#00B4B6"/>
-                            <rect x="20" y="12" width="6" height="20" transform="rotate(45 20 12)" fill="#666"/>
-                            <rect x="14" y="18" width="6" height="20" transform="rotate(-45 14 18)" fill="#555"/>
-                            <circle cx="32" cy="14" r="3" fill="#00B4B6"/>
-                        </svg>
-                        <span>株式会社ルミライズ</span>
-                    </div>
-                    <p class="footer__tagline">誰もが光を見出せる未来をつくる。</p>
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 style="margin-bottom: 1.5rem;">株式会社ルミライズ</h3>
+                    <p style="line-height: 1.8; color: rgba(255, 255, 255, 0.8);">
+                        住まいを整え、回復と再出発へ。<br>
+                        誰もが再び光を見出せる未来を作ります。
+                    </p>
                 </div>
 
-                <nav class="footer__nav" aria-label="フッターナビゲーション">
-                    <div class="footer__column">
-                        <h3 class="footer__title">会社情報</h3>
-                        <ul class="footer__list">
-                            <li><a href="#about" class="footer__link">会社概要</a></li>
-                            <li><a href="#services" class="footer__link">サービス</a></li>
-                            <li><a href="#process" class="footer__link">入居までの流れ</a></li>
-                            <li><a href="#faq" class="footer__link">よくある質問</a></li>
-                            <li><a href="#contact" class="footer__link">お問い合わせ</a></li>
-                        </ul>
-                    </div>
+                <div class="footer__section">
+                    <h3 style="margin-bottom: 1.5rem;">サービス</h3>
+                    <ul class="footer__links">
+                        <li><a href="#services">依存症者向け住宅提供</a></li>
+                        <li><a href="#services">刑務所出所者向け住宅提供</a></li>
+                        <li><a href="#services">ナイトケアハウス運営</a></li>
+                        <li><a href="#support">生活サポート</a></li>
+                    </ul>
+                </div>
 
-                    <div class="footer__column">
-                        <h3 class="footer__title">サービス</h3>
-                        <ul class="footer__list">
-                            <li><a href="#services" class="footer__link">依存症者向け住宅提供</a></li>
-                            <li><a href="#services" class="footer__link">刑務所出所者向け住宅提供</a></li>
-                            <li><a href="#services" class="footer__link">ナイトケアハウス</a></li>
-                            <li><a href="#services" class="footer__link">相談・サポート</a></li>
-                        </ul>
-                    </div>
+                <div class="footer__section">
+                    <h3 style="margin-bottom: 1.5rem;">情報</h3>
+                    <ul class="footer__links">
+                        <li><a href="#about">会社概要</a></li>
+                        <li><a href="#process">入居までの流れ</a></li>
+                        <li><a href="#faq">よくある質問</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                    </ul>
+                </div>
 
-                    <div class="footer__column">
-                        <h3 class="footer__title">関連組織</h3>
-                        <ul class="footer__list">
-                            <li><a href="https://sagamihara-darc.com" target="_blank" rel="noopener noreferrer" class="footer__link">
-                                相模原ダルク
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                    <path d="M12 4L4 12M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a></li>
-                        </ul>
-                    </div>
-                </nav>
+                <div class="footer__section">
+                    <h3 style="margin-bottom: 1.5rem;">関連組織</h3>
+                    <ul class="footer__links">
+                        <li><a href="https://sagamihara-darc.com" target="_blank" rel="noopener">一般社団法人相模原ダルク</a></li>
+                    </ul>
+                </div>
             </div>
 
             <div class="footer__bottom">
-                <p class="footer__copyright">
-                    © 2023 株式会社ルミライズ - LUMIRIZE Inc. All rights reserved.
-                </p>
-                <div class="footer__legal">
-                    <a href="#" class="footer__legal-link">プライバシーポリシー</a>
-                    <a href="#" class="footer__legal-link">利用規約</a>
-                </div>
+                <p>© 2021 株式会社ルミライズ - LUMIRIZE Inc. All rights reserved.</p>
+                <p style="margin-top: 0.5rem;">Transform Support, Illuminate Lives</p>
             </div>
         </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="back-to-top" aria-label="ページトップへ戻る" style="display: none;">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M12 19V5M5 12L12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+    <button class="back-to-top" id="back-to-top" aria-label="ページトップへ戻る">
+        ↑
     </button>
 
     <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbarMenu = document.getElementById('navbar-menu');
+        
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                navbarMenu.classList.toggle('active');
+                const isExpanded = navbarMenu.classList.contains('active');
+                menuToggle.setAttribute('aria-expanded', isExpanded);
+            });
+        }
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.navbar__link').forEach(link => {
+            link.addEventListener('click', () => {
+                navbarMenu.classList.remove('active');
+                menuToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // FAQ Toggle
+        function toggleFAQ(button) {
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('span:last-child');
+            
+            if (answer.classList.contains('active')) {
+                answer.classList.remove('active');
+                icon.textContent = '+';
+            } else {
+                answer.classList.add('active');
+                icon.textContent = '−';
+            }
+        }
+
+        // Back to Top Button
+        const backToTop = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Contact Form
+        const contactForm = document.getElementById('contact-form');
+        
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('お問い合わせありがとうございます。\n内容を確認次第、担当者よりご連絡いたします。');
+                contactForm.reset();
+            });
+        }
+
+        // Header scroll effect
+        let lastScroll = 0;
+        const header = document.querySelector('.header');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                header.style.boxShadow = '0 4px 12px rgba(255, 140, 66, 0.15)';
+            } else {
+                header.style.boxShadow = '0 2px 8px rgba(255, 140, 66, 0.1)';
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // Chart.js Initialization
+        document.addEventListener('DOMContentLoaded', function() {
+            // Success Rate Chart
+            const successCtx = document.getElementById('successChart');
+            if (successCtx) {
+                new Chart(successCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['2019年', '2020年', '2021年', '2022年', '2023年', '2024年'],
+                        datasets: [{
+                            label: '継続居住率（%）',
+                            data: [78, 82, 85, 88, 90, 92],
+                            backgroundColor: 'rgba(255, 140, 66, 0.8)',
+                            borderColor: 'rgba(255, 140, 66, 1)',
+                            borderWidth: 2,
+                            borderRadius: 8
+                        }, {
+                            label: '生活安定化率（%）',
+                            data: [72, 75, 80, 83, 86, 89],
+                            backgroundColor: 'rgba(78, 205, 196, 0.8)',
+                            borderColor: 'rgba(78, 205, 196, 1)',
+                            borderWidth: 2,
+                            borderRadius: 8
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'top',
+                                labels: {
+                                    font: {
+                                        family: "'Noto Sans JP', sans-serif",
+                                        size: 14
+                                    },
+                                    padding: 20
+                                }
+                            },
+                            title: {
+                                display: false
+                            },
+                            tooltip: {
+                                backgroundColor: 'rgba(45, 36, 22, 0.9)',
+                                titleFont: {
+                                    family: "'Noto Sans JP', sans-serif",
+                                    size: 14
+                                },
+                                bodyFont: {
+                                    family: "'Noto Sans JP', sans-serif",
+                                    size: 13
+                                },
+                                padding: 12,
+                                cornerRadius: 8
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                max: 100,
+                                ticks: {
+                                    callback: function(value) {
+                                        return value + '%';
+                                    },
+                                    font: {
+                                        family: "'Noto Sans JP', sans-serif",
+                                        size: 12
+                                    }
+                                },
+                                grid: {
+                                    color: 'rgba(0, 0, 0, 0.05)'
+                                }
+                            },
+                            x: {
+                                ticks: {
+                                    font: {
+                                        family: "'Noto Sans JP', sans-serif",
+                                        size: 12
+                                    }
+                                },
+                                grid: {
+                                    display: false
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Animate progress bars on scroll
+            const progressBars = document.querySelectorAll('.progress-bar__fill');
+            const observerOptions = {
+                threshold: 0.5,
+                rootMargin: '0px'
+            };
+
+            const progressObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const width = entry.target.style.width;
+                        entry.target.style.width = '0';
+                        setTimeout(() => {
+                            entry.target.style.width = width;
+                        }, 100);
+                        progressObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            progressBars.forEach(bar => {
+                progressObserver.observe(bar);
+            });
+        });
+    </script>
 </body>
 </html>
