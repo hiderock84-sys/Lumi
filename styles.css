@@ -183,9 +183,9 @@ a:hover {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.95);
+    background: transparent;
     backdrop-filter: blur(10px);
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
     transition: all var(--transition-base);
 }
 
@@ -222,10 +222,15 @@ a:hover {
 .navbar__logo img {
     transition: all var(--transition-base);
     filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.5rem;
+    border-radius: 8px;
 }
 
 .header.scrolled .navbar__logo img {
     filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+    background: transparent;
+    padding: 0;
 }
 
 .navbar__logo:hover img {
@@ -253,19 +258,23 @@ a:hover {
 
 .navbar__link {
     font-weight: 600;
-    color: var(--color-text-secondary);
+    color: white;
     padding: var(--space-2) var(--space-3);
     border-radius: var(--radius-md);
     transition: all var(--transition-fast);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .header.scrolled .navbar__link {
     color: var(--color-text-secondary);
+    text-shadow: none;
+    background: transparent;
 }
 
 .navbar__link:hover {
     color: var(--color-primary);
-    background: rgba(255, 168, 92, 0.15);
+    background: rgba(255, 168, 92, 0.2);
     transform: translateY(-2px);
 }
 
