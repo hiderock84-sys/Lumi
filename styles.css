@@ -507,15 +507,14 @@ a:hover {
     background: white;
     border-radius: var(--radius-xl);
     padding: var(--space-8);
-    box-shadow: 0 8px 32px rgba(255, 168, 92, 0.12);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
     transition: var(--transition-base);
-    border: 2px solid rgba(255, 168, 92, 0.08);
+    border: none;
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 16px 48px rgba(255, 168, 92, 0.2);
-    border-color: rgba(255, 168, 92, 0.3);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
 .card__icon {
@@ -817,7 +816,7 @@ a:hover {
 .form-textarea {
     width: 100%;
     padding: var(--space-4);
-    border: 2px solid #E5E7EB;
+    border: 1px solid #E5E7EB;
     border-radius: var(--radius-md);
     font-size: var(--text-base);
     font-family: inherit;
@@ -828,7 +827,7 @@ a:hover {
 .form-textarea:focus {
     outline: none;
     border-color: var(--color-primary);
-    box-shadow: 0 0 0 3px rgba(255, 140, 66, 0.1);
+    box-shadow: 0 0 0 2px rgba(27, 181, 168, 0.1);
 }
 
 .form-textarea {
