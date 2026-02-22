@@ -60,15 +60,12 @@
         <section id="hero" class="hero" style="background: linear-gradient(135deg, rgba(45, 36, 22, 0.85) 0%, rgba(92, 74, 58, 0.80) 50%, rgba(140, 122, 106, 0.75) 100%), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=90') center/cover;">
             <div class="container">
                 <div class="hero__content">
-                    <div class="hero__badge">Transform Support, Illuminate Lives</div>
                     <h1 class="hero__title">
                         住まいを整え、<br>
                         回復と再出発へ。
                     </h1>
                     <p class="hero__description">
-                        株式会社ルミライズは、依存症者・刑務所出所者等、行き場のない方々のための住宅提供サービスを行う専門企業です。<br>
-                        一人ひとりに寄り添い、安心できる住まいと温かいサポートを通じて、新しい人生の一歩を踏み出すお手伝いをします。<br>
-                        あなたは一人ではありません。私たちが、あなたの未来を一緒に照らします。
+                        行き場のない方々に、安心できる住まいと温かいサポートを。
                     </p>
                     <div class="hero__actions">
                         <a href="tel:042-704-8308" class="btn btn--primary btn--large">
@@ -140,21 +137,7 @@
                     </div>
                 </div>
 
-                <!-- Company Info -->
-                <div class="card" style="margin-top: 4rem; padding: 3rem;">
-                    <h3 class="card__title" style="text-align: center; font-size: 2rem; margin-bottom: 3rem;">会社概要</h3>
-                    <div class="grid grid--2" style="gap: 2rem; text-align: left;">
-                        <div>
-                            <p style="margin-bottom: 1.5rem;"><strong style="color: #FF8C42;">会社名:</strong><br>株式会社ルミライズ</p>
-                            <p style="margin-bottom: 1.5rem;"><strong style="color: #FF8C42;">代表取締役:</strong><br>田中 秀泰</p>
-                            <p style="margin-bottom: 1.5rem;"><strong style="color: #FF8C42;">設立:</strong><br>2021年8月24日</p>
-                        </div>
-                        <div>
-                            <p style="margin-bottom: 1.5rem;"><strong style="color: #FF8C42;">所在地:</strong><br>〒252-0237<br>神奈川県相模原市中央区千代田3-3-20</p>
-                            <p style="margin-bottom: 1.5rem;"><strong style="color: #FF8C42;">関連組織:</strong><br>一般社団法人相模原ダルク</p>
-                        </div>
-                    </div>
-                </div>
+
 
                 <!-- Representative Message -->
                 <div class="card" style="margin-top: 3rem; padding: 3rem; background: linear-gradient(135deg, #FFF9F5 0%, #FFE8DC 100%);">
@@ -928,7 +911,7 @@
         <div class="container">
             <div class="footer__content">
                 <div class="footer__section">
-                    <h3 style="margin-bottom: 1.5rem;">株式会社ルミライズ</h3>
+                    <img src="lumirize-logo.png" alt="LUMIRIZE 株式会社ルミライズ" style="height: 60px; width: auto; margin-bottom: 1.5rem; filter: brightness(0) invert(1);">
                     <p style="line-height: 1.8; color: rgba(255, 255, 255, 0.8);">
                         住まいを整え、回復と再出発へ。<br>
                         誰もが再び光を見出せる未来を作ります。
@@ -956,10 +939,14 @@
                 </div>
 
                 <div class="footer__section">
-                    <h3 style="margin-bottom: 1.5rem;">関連組織</h3>
-                    <ul class="footer__links">
-                        <li><a href="https://sagamihara-darc.com" target="_blank" rel="noopener">一般社団法人相模原ダルク</a></li>
-                    </ul>
+                    <h3 style="margin-bottom: 1.5rem;">会社概要</h3>
+                    <div style="color: rgba(255, 255, 255, 0.8); line-height: 1.8; font-size: 0.9rem;">
+                        <p style="margin-bottom: 0.75rem;"><strong>株式会社ルミライズ</strong></p>
+                        <p style="margin-bottom: 0.5rem;">代表取締役：田中 秀泰</p>
+                        <p style="margin-bottom: 0.5rem;">設立：2021年8月24日</p>
+                        <p style="margin-bottom: 0.5rem;">〒252-0237<br>神奈川県相模原市中央区千代田3-3-20</p>
+                        <p style="margin-top: 1rem;"><a href="https://sagamihara-darc.com" target="_blank" rel="noopener" style="color: rgba(255, 255, 255, 0.9); text-decoration: underline;">一般社団法人相模原ダルク</a></p>
+                    </div>
                 </div>
             </div>
 
@@ -1011,14 +998,22 @@
             }
         }
 
-        // Back to Top Button
+        // Back to Top Button & Header Scroll Effect
         const backToTop = document.getElementById('back-to-top');
+        const header = document.querySelector('.header');
         
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 500) {
                 backToTop.classList.add('visible');
             } else {
                 backToTop.classList.remove('visible');
+            }
+            
+            // Add scrolled class to header
+            if (window.pageYOffset > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
             }
         });
 

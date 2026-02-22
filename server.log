@@ -1,0 +1,5 @@
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+127.0.0.1 - - [21/Feb/2026 23:58:42] "GET /lumirize-logo.png HTTP/1.1" 200 -
+10.64.57.88 - - [21/Feb/2026 23:59:04] "GET / HTTP/1.1" 200 -
+10.64.57.88 - - [21/Feb/2026 23:59:04] "GET /styles.css HTTP/1.1" 200 -
+10.64.57.88 - - [21/Feb/2026 23:59:04] "GET /lumirize-logo.png HTTP/1.1" 200 -
