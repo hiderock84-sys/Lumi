@@ -411,14 +411,14 @@ a:hover {
 }
 
 .btn--primary {
-    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    background: var(--color-primary);
     color: white;
-    box-shadow: 0 8px 24px rgba(255, 168, 92, 0.4);
+    box-shadow: 0 6px 20px rgba(27, 181, 168, 0.4);
 }
 
 .btn--primary:hover {
     transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 12px 32px rgba(255, 168, 92, 0.5);
+    box-shadow: 0 12px 32px rgba(27, 181, 168, 0.5);
 }
 
 .btn--secondary {

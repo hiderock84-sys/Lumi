@@ -1,165 +1,25 @@
-Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
-127.0.0.1 - - [21/Feb/2026 23:58:42] "GET /lumirize-logo.png HTTP/1.1" 200 -
-10.64.57.88 - - [21/Feb/2026 23:59:04] "GET / HTTP/1.1" 200 -
-10.64.57.88 - - [21/Feb/2026 23:59:04] "GET /styles.css HTTP/1.1" 200 -
-10.64.57.88 - - [21/Feb/2026 23:59:04] "GET /lumirize-logo.png HTTP/1.1" 200 -
-10.64.57.88 - - [22/Feb/2026 00:06:54] "GET / HTTP/1.1" 200 -
-10.64.57.88 - - [22/Feb/2026 00:06:54] "GET /lumirize-logo.png HTTP/1.1" 304 -
-10.64.57.88 - - [22/Feb/2026 00:06:54] "GET /styles.css HTTP/1.1" 200 -
-10.64.57.88 - - [22/Feb/2026 00:08:08] "GET / HTTP/1.1" 304 -
-10.64.57.88 - - [22/Feb/2026 00:08:09] "GET /lumirize-logo.png HTTP/1.1" 304 -
-10.64.57.88 - - [22/Feb/2026 00:08:09] "GET /styles.css HTTP/1.1" 304 -
-10.64.57.88 - - [22/Feb/2026 00:12:22] "GET / HTTP/1.1" 200 -
-10.64.57.88 - - [22/Feb/2026 00:12:22] "GET /lumirize-logo.png HTTP/1.1" 304 -
-10.64.57.88 - - [22/Feb/2026 00:12:22] "GET /styles.css HTTP/1.1" 200 -
-10.64.57.88 - - [22/Feb/2026 00:12:46] "GET / HTTP/1.1" 304 -
-10.64.57.88 - - [22/Feb/2026 00:12:47] "GET /styles.css HTTP/1.1" 304 -
-10.64.57.88 - - [22/Feb/2026 00:17:08] "GET / HTTP/1.1" 304 -
-10.64.57.88 - - [22/Feb/2026 00:17:08] "GET /styles.css HTTP/1.1" 200 -
-10.64.57.88 - - [22/Feb/2026 00:17:08] "GET /lumirize-logo.png HTTP/1.1" 304 -
-10.64.57.88 - - [22/Feb/2026 00:24:40] "GET / HTTP/1.1" 200 -
-10.64.57.88 - - [22/Feb/2026 00:24:40] "GET /lumirize-logo.png HTTP/1.1" 304 -
-10.64.57.88 - - [22/Feb/2026 00:24:40] "GET /styles.css HTTP/1.1" 200 -
-10.64.57.88 - - [22/Feb/2026 00:25:34] "GET / HTTP/1.1" 304 -
-10.64.57.88 - - [22/Feb/2026 00:25:34] "GET /styles.css HTTP/1.1" 304 -
-10.64.57.88 - - [22/Feb/2026 00:26:20] "GET / HTTP/1.1" 200 -
-10.64.57.88 - - [22/Feb/2026 00:26:20] "GET /lumirize-logo.png HTTP/1.1" 200 -
-10.64.57.88 - - [22/Feb/2026 00:26:20] "GET /styles.css HTTP/1.1" 200 -
-10.64.57.88 - - [22/Feb/2026 00:28:31] "GET / HTTP/1.1" 200 -
-10.64.57.88 - - [22/Feb/2026 00:28:31] "GET /styles.css HTTP/1.1" 200 -
-10.64.57.88 - - [22/Feb/2026 00:28:31] "GET /lumirize-logo.png HTTP/1.1" 304 -
-10.64.57.88 - - [22/Feb/2026 00:29:03] "GET / HTTP/1.1" 200 -
-10.64.57.88 - - [22/Feb/2026 00:29:03] "GET /script.js HTTP/1.1" 304 -
-10.64.57.88 - - [22/Feb/2026 00:29:03] "GET /styles.css HTTP/1.1" 200 -
-10.64.57.88 - - [22/Feb/2026 00:29:04] "GET /lumirize-logo.png HTTP/1.1" 200 -
-10.64.57.88 - - [22/Feb/2026 00:29:13] "GET / HTTP/1.1" 200 -
-10.64.57.88 - - [22/Feb/2026 00:30:55] "GET / HTTP/1.1" 304 -
-10.64.57.88 - - [22/Feb/2026 00:30:56] "GET /styles.css HTTP/1.1" 304 -
-10.64.152.112 - - [22/Feb/2026 00:32:30] "GET / HTTP/1.1" 304 -
-10.64.152.112 - - [22/Feb/2026 00:32:30] "GET /lumirize-logo.png HTTP/1.1" 304 -
-10.64.152.112 - - [22/Feb/2026 00:32:30] "GET /styles.css HTTP/1.1" 304 -
-10.64.152.112 - - [22/Feb/2026 00:42:30] "GET / HTTP/1.1" 200 -
-10.64.152.112 - - [22/Feb/2026 00:42:30] "GET /lumirize-logo.png HTTP/1.1" 200 -
-10.64.152.112 - - [22/Feb/2026 00:42:30] "GET /styles.css HTTP/1.1" 200 -
-10.64.152.112 - - [22/Feb/2026 00:42:32] code 404, message File not found
-10.64.152.112 - - [22/Feb/2026 00:42:32] "GET /favicon.ico HTTP/1.1" 404 -
-10.64.152.112 - - [22/Feb/2026 00:42:37] code 404, message File not found
-10.64.152.112 - - [22/Feb/2026 00:42:37] "HEAD /favicon.ico HTTP/1.1" 404 -
-10.64.152.112 - - [22/Feb/2026 00:42:37] code 404, message File not found
-10.64.152.112 - - [22/Feb/2026 00:42:37] "HEAD /favicon.ico HTTP/1.1" 404 -
-10.64.152.112 - - [22/Feb/2026 00:43:45] "GET / HTTP/1.1" 200 -
-10.64.152.112 - - [22/Feb/2026 00:53:51] "GET / HTTP/1.1" 200 -
-10.64.152.112 - - [22/Feb/2026 00:53:51] "GET /lumirize-logo.png HTTP/1.1" 304 -
-10.64.152.112 - - [22/Feb/2026 00:53:51] "GET /styles.css HTTP/1.1" 200 -
-10.64.127.148 - - [22/Feb/2026 02:40:48] "GET / HTTP/1.1" 200 -
-10.64.127.148 - - [22/Feb/2026 02:40:48] "GET /lumirize-logo.png HTTP/1.1" 304 -
-10.64.127.148 - - [22/Feb/2026 02:40:48] "GET /styles.css HTTP/1.1" 304 -
-10.64.127.148 - - [22/Feb/2026 02:40:49] "GET /section-toggle.js HTTP/1.1" 200 -
-10.64.127.148 - - [22/Feb/2026 02:42:10] "GET / HTTP/1.1" 200 -
-10.64.127.148 - - [22/Feb/2026 02:42:10] "GET /styles.css HTTP/1.1" 200 -
-10.64.127.148 - - [22/Feb/2026 02:42:10] "GET /lumirize-logo.png HTTP/1.1" 304 -
-10.64.127.148 - - [22/Feb/2026 02:42:11] "GET /section-toggle.js HTTP/1.1" 200 -
-10.64.127.148 - - [22/Feb/2026 02:55:06] "GET / HTTP/1.1" 200 -
-10.64.127.148 - - [22/Feb/2026 02:55:07] "GET /styles.css HTTP/1.1" 200 -
-10.64.127.148 - - [22/Feb/2026 02:55:07] "GET /section-toggle.js HTTP/1.1" 200 -
-10.64.127.148 - - [22/Feb/2026 02:57:44] "GET / HTTP/1.1" 200 -
-10.64.127.148 - - [22/Feb/2026 02:57:44] "GET / HTTP/1.1" 200 -
-10.64.127.148 - - [22/Feb/2026 02:57:44] code 404, message File not found
-10.64.127.148 - - [22/Feb/2026 02:57:44] code 404, message File not found
-10.64.127.148 - - [22/Feb/2026 02:57:44] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
-10.64.127.148 - - [22/Feb/2026 02:57:44] code 404, message File not found
-10.64.127.148 - - [22/Feb/2026 02:57:44] "GET /apple-touch-icon.png HTTP/1.1" 404 -
-10.64.127.148 - - [22/Feb/2026 02:57:44] "GET /favicon.ico HTTP/1.1" 404 -
-10.64.127.148 - - [22/Feb/2026 02:57:45] code 404, message File not found
-10.64.127.148 - - [22/Feb/2026 02:57:45] "GET /apple-touch-icon-120x120-precomposed.png HTTP/1.1" 404 -
-10.64.127.148 - - [22/Feb/2026 02:57:45] code 404, message File not found
-10.64.127.148 - - [22/Feb/2026 02:57:45] "GET /apple-touch-icon-120x120.png HTTP/1.1" 404 -
-10.64.127.148 - - [22/Feb/2026 02:57:46] code 404, message File not found
-10.64.127.148 - - [22/Feb/2026 02:57:46] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
-10.64.127.148 - - [22/Feb/2026 02:57:46] code 404, message File not found
-10.64.127.148 - - [22/Feb/2026 02:57:46] "GET /apple-touch-icon.png HTTP/1.1" 404 -
-10.64.127.148 - - [22/Feb/2026 02:57:46] code 404, message File not found
-10.64.127.148 - - [22/Feb/2026 02:57:46] "GET /favicon.ico HTTP/1.1" 404 -
-10.64.127.148 - - [22/Feb/2026 02:57:46] code 404, message File not found
-10.64.127.148 - - [22/Feb/2026 02:57:46] "GET /apple-touch-icon-120x120-precomposed.png HTTP/1.1" 404 -
-10.64.127.148 - - [22/Feb/2026 02:57:47] code 404, message File not found
-10.64.127.148 - - [22/Feb/2026 02:57:47] "GET /apple-touch-icon-120x120.png HTTP/1.1" 404 -
-10.64.127.148 - - [22/Feb/2026 02:57:47] code 404, message File not found
-10.64.127.148 - - [22/Feb/2026 02:57:47] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
-10.64.127.148 - - [22/Feb/2026 02:57:47] code 404, message File not found
-10.64.127.148 - - [22/Feb/2026 02:57:47] "GET /apple-touch-icon.png HTTP/1.1" 404 -
-10.64.127.148 - - [22/Feb/2026 02:57:47] code 404, message File not found
-10.64.127.148 - - [22/Feb/2026 02:57:47] "GET /favicon.ico HTTP/1.1" 404 -
-10.64.39.134 - - [22/Feb/2026 03:57:21] code 404, message File not found
-10.64.39.134 - - [22/Feb/2026 03:57:21] "GET /favicon.ico HTTP/1.1" 404 -
-10.64.39.134 - - [22/Feb/2026 04:57:14] code 404, message File not found
-10.64.39.134 - - [22/Feb/2026 04:57:14] "GET / HTTP/1.1" 200 -
-10.64.39.134 - - [22/Feb/2026 04:57:14] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
-10.64.39.134 - - [22/Feb/2026 04:57:14] code 404, message File not found
-10.64.39.134 - - [22/Feb/2026 04:57:14] "GET /apple-touch-icon.png HTTP/1.1" 404 -
-10.64.39.134 - - [22/Feb/2026 05:00:22] code 404, message File not found
-10.64.39.134 - - [22/Feb/2026 05:00:22] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
-10.64.39.134 - - [22/Feb/2026 05:00:22] "GET / HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 05:02:21] "GET / HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 05:48:40] "GET /styles.css HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 05:48:40] "GET /lumirize-logo.png HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 05:49:49] "GET /lumirize-logo.png HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 05:49:51] "GET / HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 05:49:52] "GET /styles.css HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 05:49:52] "GET /section-toggle.js HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 05:53:40] "GET / HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 05:53:40] "GET /lumirize-logo.png HTTP/1.1" 304 -
-10.64.189.220 - - [22/Feb/2026 05:53:40] "GET /styles.css HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 05:53:44] "GET /section-toggle.js HTTP/1.1" 304 -
-10.64.189.220 - - [22/Feb/2026 06:01:22] "GET / HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 06:01:23] "GET / HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 06:01:49] "GET / HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 06:01:51] "GET / HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 06:03:03] "GET / HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 06:03:11] "GET / HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 06:03:46] "GET / HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 06:04:44] "GET / HTTP/1.1" 304 -
-10.64.189.220 - - [22/Feb/2026 06:09:51] "GET / HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 06:09:52] "GET /styles.css HTTP/1.1" 304 -
-10.64.189.220 - - [22/Feb/2026 06:09:55] "GET /section-toggle.js HTTP/1.1" 304 -
-10.64.189.220 - - [22/Feb/2026 06:10:07] "GET / HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 06:16:24] "GET / HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 06:16:24] "GET /styles.css HTTP/1.1" 304 -
-10.64.189.220 - - [22/Feb/2026 06:16:26] "GET /section-toggle.js HTTP/1.1" 304 -
-10.64.189.220 - - [22/Feb/2026 06:18:24] "GET / HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 06:19:29] "GET / HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 06:22:59] "GET / HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 06:23:01] code 404, message File not found
-10.64.189.220 - - [22/Feb/2026 06:23:01] code 404, message File not found
-10.64.189.220 - - [22/Feb/2026 06:23:01] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
-10.64.189.220 - - [22/Feb/2026 06:23:01] "GET /apple-touch-icon.png HTTP/1.1" 404 -
-10.64.189.220 - - [22/Feb/2026 06:23:01] code 404, message File not found
-10.64.189.220 - - [22/Feb/2026 06:23:01] "GET /favicon.ico HTTP/1.1" 404 -
-10.64.189.220 - - [22/Feb/2026 06:24:59] "GET / HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 06:25:03] "GET / HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 06:25:43] "GET / HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 06:25:44] "GET /lumirize-logo.png HTTP/1.1" 304 -
-10.64.189.220 - - [22/Feb/2026 06:39:47] "GET / HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 06:39:48] "GET /styles.css HTTP/1.1" 304 -
-10.64.189.220 - - [22/Feb/2026 06:39:48] "GET /section-toggle.js HTTP/1.1" 304 -
-10.64.189.220 - - [22/Feb/2026 07:00:27] "GET / HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 07:02:58] "GET / HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 07:02:58] "GET /styles.css HTTP/1.1" 304 -
-10.64.189.220 - - [22/Feb/2026 07:02:59] "GET /section-toggle.js HTTP/1.1" 304 -
-10.64.189.220 - - [22/Feb/2026 07:18:56] "GET / HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 07:18:57] "GET /lumirize-logo.png HTTP/1.1" 304 -
-10.64.189.220 - - [22/Feb/2026 07:23:24] "GET / HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 07:23:27] code 404, message File not found
-10.64.189.220 - - [22/Feb/2026 07:23:27] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
-10.64.189.220 - - [22/Feb/2026 07:23:27] code 404, message File not found
-10.64.189.220 - - [22/Feb/2026 07:23:27] "GET /apple-touch-icon.png HTTP/1.1" 404 -
-10.64.189.220 - - [22/Feb/2026 07:23:27] code 404, message File not found
-10.64.189.220 - - [22/Feb/2026 07:23:27] "GET /favicon.ico HTTP/1.1" 404 -
-10.64.189.220 - - [22/Feb/2026 07:25:47] "GET / HTTP/1.1" 200 -
-10.64.189.220 - - [22/Feb/2026 08:12:45] code 404, message File not found
-10.64.189.220 - - [22/Feb/2026 08:12:45] code 404, message File not found
-10.64.189.220 - - [22/Feb/2026 08:12:45] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
-10.64.189.220 - - [22/Feb/2026 08:12:45] code 404, message File not found
-10.64.189.220 - - [22/Feb/2026 08:12:45] "GET /favicon.ico HTTP/1.1" 404 -
-10.64.189.220 - - [22/Feb/2026 08:12:45] "GET /apple-touch-icon.png HTTP/1.1" 404 -
-10.64.189.220 - - [22/Feb/2026 08:12:45] "GET / HTTP/1.1" 200 -
+Serving HTTP on 0.0.0.0 port 8001 (http://0.0.0.0:8001/) ...
+10.64.189.220 - - [22/Feb/2026 09:33:31] "GET / HTTP/1.1" 200 -
+10.64.189.220 - - [22/Feb/2026 09:33:31] "GET /styles.css HTTP/1.1" 304 -
+10.64.189.220 - - [22/Feb/2026 09:33:31] "GET /lumirize-logo.png HTTP/1.1" 304 -
+10.64.189.220 - - [22/Feb/2026 09:33:32] "GET /section-toggle.js HTTP/1.1" 304 -
+10.64.189.220 - - [22/Feb/2026 09:33:42] "GET / HTTP/1.1" 200 -
+10.64.189.220 - - [22/Feb/2026 09:33:42] "GET /styles.css HTTP/1.1" 200 -
+10.64.189.220 - - [22/Feb/2026 09:33:42] "GET /lumirize-logo.png HTTP/1.1" 200 -
+10.64.189.220 - - [22/Feb/2026 09:33:43] "GET /section-toggle.js HTTP/1.1" 200 -
+10.64.189.220 - - [22/Feb/2026 09:33:54] "GET / HTTP/1.1" 200 -
+10.64.189.220 - - [22/Feb/2026 09:34:33] "GET / HTTP/1.1" 200 -
+10.64.189.220 - - [22/Feb/2026 09:34:33] "GET /lumirize-logo.png HTTP/1.1" 200 -
+10.64.189.220 - - [22/Feb/2026 09:34:33] "GET /styles.css HTTP/1.1" 200 -
+10.64.189.220 - - [22/Feb/2026 09:34:34] "GET /section-toggle.js HTTP/1.1" 200 -
+10.64.189.220 - - [22/Feb/2026 09:35:37] "GET / HTTP/1.1" 200 -
+10.64.189.220 - - [22/Feb/2026 09:37:00] "GET /index.html HTTP/1.1" 200 -
+10.64.189.220 - - [22/Feb/2026 09:37:01] "GET /lumirize-logo.png HTTP/1.1" 200 -
+10.64.189.220 - - [22/Feb/2026 09:37:01] "GET /styles.css HTTP/1.1" 200 -
+10.64.189.220 - - [22/Feb/2026 09:37:01] "GET /section-toggle.js HTTP/1.1" 200 -
+10.64.189.220 - - [22/Feb/2026 09:37:55] code 404, message File not found
+10.64.189.220 - - [22/Feb/2026 09:37:55] code 404, message File not found
+10.64.189.220 - - [22/Feb/2026 09:37:55] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+10.64.189.220 - - [22/Feb/2026 09:37:55] "GET /favicon.ico HTTP/1.1" 404 -
+10.64.189.220 - - [22/Feb/2026 09:37:55] code 404, message File not found
+10.64.189.220 - - [22/Feb/2026 09:37:55] "GET /apple-touch-icon.png HTTP/1.1" 404 -
