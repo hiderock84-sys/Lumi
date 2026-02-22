@@ -17,18 +17,18 @@
     --color-accent: #3C3C3C;         /* Dark Gray (公式ロゴ) - Authority */
     --color-accent-rose: #00C4B6;    /* Bright Teal - Energy */
     
-    /* Background - Very Bright & Inviting */
-    --color-background: #FFFCF9;     
-    --color-background-alt: #FFF8F2; 
+    /* Background - Clean & Neutral */
+    --color-background: #F9FAFB;     
+    --color-background-alt: #F3F4F6; 
     --color-surface: #FFFFFF;        
-    --color-surface-hover: #FFF5ED;  
-    --color-surface-cream: #FFFDFA;  
+    --color-surface-hover: #F0F9FF;  
+    --color-surface-cream: #FEFCE8;  
     
-    /* Text - Warm Neutrals */
-    --color-text-primary: #2D2416;   
-    --color-text-secondary: #5C4A3A; 
-    --color-text-muted: #8C7A6A;     
-    --color-text-disabled: #BDB3A8;  
+    /* Text - Cool Neutrals (Gray Tones) */
+    --color-text-primary: #1F2937;   
+    --color-text-secondary: #4B5563; 
+    --color-text-muted: #6B7280;     
+    --color-text-disabled: #9CA3AF;  
     
     /* Semantic Colors */
     --color-success: #52C17D;    
@@ -840,7 +840,7 @@ a:hover {
    Footer
    ============================================ */
 .footer {
-    background: linear-gradient(135deg, #2D2416 0%, #3D3426 100%);
+    background: linear-gradient(135deg, #1F2937 0%, #374151 100%);
     color: white;
     padding: var(--space-16) 0 var(--space-8);
 }

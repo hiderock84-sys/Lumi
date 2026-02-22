@@ -51,3 +51,42 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 10.64.152.112 - - [22/Feb/2026 00:53:51] "GET / HTTP/1.1" 200 -
 10.64.152.112 - - [22/Feb/2026 00:53:51] "GET /lumirize-logo.png HTTP/1.1" 304 -
 10.64.152.112 - - [22/Feb/2026 00:53:51] "GET /styles.css HTTP/1.1" 200 -
+10.64.127.148 - - [22/Feb/2026 02:40:48] "GET / HTTP/1.1" 200 -
+10.64.127.148 - - [22/Feb/2026 02:40:48] "GET /lumirize-logo.png HTTP/1.1" 304 -
+10.64.127.148 - - [22/Feb/2026 02:40:48] "GET /styles.css HTTP/1.1" 304 -
+10.64.127.148 - - [22/Feb/2026 02:40:49] "GET /section-toggle.js HTTP/1.1" 200 -
+10.64.127.148 - - [22/Feb/2026 02:42:10] "GET / HTTP/1.1" 200 -
+10.64.127.148 - - [22/Feb/2026 02:42:10] "GET /styles.css HTTP/1.1" 200 -
+10.64.127.148 - - [22/Feb/2026 02:42:10] "GET /lumirize-logo.png HTTP/1.1" 304 -
+10.64.127.148 - - [22/Feb/2026 02:42:11] "GET /section-toggle.js HTTP/1.1" 200 -
+10.64.127.148 - - [22/Feb/2026 02:55:06] "GET / HTTP/1.1" 200 -
+10.64.127.148 - - [22/Feb/2026 02:55:07] "GET /styles.css HTTP/1.1" 200 -
+10.64.127.148 - - [22/Feb/2026 02:55:07] "GET /section-toggle.js HTTP/1.1" 200 -
+10.64.127.148 - - [22/Feb/2026 02:57:44] "GET / HTTP/1.1" 200 -
+10.64.127.148 - - [22/Feb/2026 02:57:44] "GET / HTTP/1.1" 200 -
+10.64.127.148 - - [22/Feb/2026 02:57:44] code 404, message File not found
+10.64.127.148 - - [22/Feb/2026 02:57:44] code 404, message File not found
+10.64.127.148 - - [22/Feb/2026 02:57:44] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+10.64.127.148 - - [22/Feb/2026 02:57:44] code 404, message File not found
+10.64.127.148 - - [22/Feb/2026 02:57:44] "GET /apple-touch-icon.png HTTP/1.1" 404 -
+10.64.127.148 - - [22/Feb/2026 02:57:44] "GET /favicon.ico HTTP/1.1" 404 -
+10.64.127.148 - - [22/Feb/2026 02:57:45] code 404, message File not found
+10.64.127.148 - - [22/Feb/2026 02:57:45] "GET /apple-touch-icon-120x120-precomposed.png HTTP/1.1" 404 -
+10.64.127.148 - - [22/Feb/2026 02:57:45] code 404, message File not found
+10.64.127.148 - - [22/Feb/2026 02:57:45] "GET /apple-touch-icon-120x120.png HTTP/1.1" 404 -
+10.64.127.148 - - [22/Feb/2026 02:57:46] code 404, message File not found
+10.64.127.148 - - [22/Feb/2026 02:57:46] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+10.64.127.148 - - [22/Feb/2026 02:57:46] code 404, message File not found
+10.64.127.148 - - [22/Feb/2026 02:57:46] "GET /apple-touch-icon.png HTTP/1.1" 404 -
+10.64.127.148 - - [22/Feb/2026 02:57:46] code 404, message File not found
+10.64.127.148 - - [22/Feb/2026 02:57:46] "GET /favicon.ico HTTP/1.1" 404 -
+10.64.127.148 - - [22/Feb/2026 02:57:46] code 404, message File not found
+10.64.127.148 - - [22/Feb/2026 02:57:46] "GET /apple-touch-icon-120x120-precomposed.png HTTP/1.1" 404 -
+10.64.127.148 - - [22/Feb/2026 02:57:47] code 404, message File not found
+10.64.127.148 - - [22/Feb/2026 02:57:47] "GET /apple-touch-icon-120x120.png HTTP/1.1" 404 -
+10.64.127.148 - - [22/Feb/2026 02:57:47] code 404, message File not found
+10.64.127.148 - - [22/Feb/2026 02:57:47] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+10.64.127.148 - - [22/Feb/2026 02:57:47] code 404, message File not found
+10.64.127.148 - - [22/Feb/2026 02:57:47] "GET /apple-touch-icon.png HTTP/1.1" 404 -
+10.64.127.148 - - [22/Feb/2026 02:57:47] code 404, message File not found
+10.64.127.148 - - [22/Feb/2026 02:57:47] "GET /favicon.ico HTTP/1.1" 404 -
