@@ -281,7 +281,7 @@ style.textContent = `
     
     .toggle-btn:hover {
         transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(255, 168, 92, 0.3);
+        box-shadow: 0 6px 20px rgba(0, 169, 157, 0.3);
     }
     
     .toggle-btn__icon {
@@ -313,7 +313,7 @@ style.textContent = `
     }
     
     .accordion-header {
-        background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+        background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
         color: white;
         padding: 1.5rem 2rem;
         display: flex;
@@ -324,8 +324,8 @@ style.textContent = `
     }
     
     .accordion-header:hover {
-        background: linear-gradient(135deg, #FF9A4D 0%, #FFD980 100%);
-        box-shadow: 0 4px 16px rgba(255, 168, 92, 0.4);
+        background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-secondary-light) 100%);
+        box-shadow: 0 4px 16px rgba(0, 169, 157, 0.4);
     }
     
     .accordion-header__content {

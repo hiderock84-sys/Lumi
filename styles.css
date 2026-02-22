@@ -7,15 +7,15 @@
    CSS Variables (Design Tokens)
    ============================================ */
 :root {
-    /* Bright & Warm Color Palette - Hope & Healing */
-    --color-primary: #FFA85C;        /* Bright Warm Orange - Energy & Hope */
-    --color-primary-dark: #FF9842;   
-    --color-primary-light: #FFC288;  
-    --color-secondary: #5FD9D0;      /* Bright Soft Teal - Trust & Calm */
-    --color-secondary-dark: #4BC9C0;
-    --color-secondary-light: #85E8E0;
-    --color-accent: #FFC850;         /* Bright Golden Yellow - Warmth */
-    --color-accent-rose: #FF88B8;    /* Bright Soft Rose - Care */
+    /* LUMIRIZE Official Logo Colors - Professional & Trustworthy */
+    --color-primary: #00A99D;        /* Teal Green (公式ロゴ) - Trust & Growth */
+    --color-primary-dark: #008C82;   
+    --color-primary-light: #33BDB3;  
+    --color-secondary: #8E8E8E;      /* Medium Gray (公式ロゴ) - Stability */
+    --color-secondary-dark: #6E6E6E;
+    --color-secondary-light: #AEAEAE;
+    --color-accent: #3C3C3C;         /* Dark Gray (公式ロゴ) - Authority */
+    --color-accent-rose: #00C4B6;    /* Bright Teal - Energy */
     
     /* Background - Very Bright & Inviting */
     --color-background: #FFFCF9;     
@@ -1599,11 +1599,13 @@ a:hover {
 
 /* Key Findings Box */
 .key-findings-box {
-    background: linear-gradient(135deg, #2D2416 0%, #5C4A3A 100%);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
     color: white;
     padding: var(--space-10);
     border-radius: var(--radius-xl);
     margin-top: var(--space-10);
+    border: 3px solid white;
+    box-shadow: 0 10px 40px rgba(0, 169, 157, 0.3);
 }
 
 .key-findings-box__title {
@@ -1611,7 +1613,8 @@ a:hover {
     font-weight: 800;
     margin-bottom: var(--space-8);
     text-align: center;
-    color: var(--color-accent);
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .key-findings-grid {
