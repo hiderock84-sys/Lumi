@@ -146,3 +146,13 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 10.64.189.220 - - [22/Feb/2026 07:02:58] "GET / HTTP/1.1" 200 -
 10.64.189.220 - - [22/Feb/2026 07:02:58] "GET /styles.css HTTP/1.1" 304 -
 10.64.189.220 - - [22/Feb/2026 07:02:59] "GET /section-toggle.js HTTP/1.1" 304 -
+10.64.189.220 - - [22/Feb/2026 07:18:56] "GET / HTTP/1.1" 200 -
+10.64.189.220 - - [22/Feb/2026 07:18:57] "GET /lumirize-logo.png HTTP/1.1" 304 -
+10.64.189.220 - - [22/Feb/2026 07:23:24] "GET / HTTP/1.1" 200 -
+10.64.189.220 - - [22/Feb/2026 07:23:27] code 404, message File not found
+10.64.189.220 - - [22/Feb/2026 07:23:27] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+10.64.189.220 - - [22/Feb/2026 07:23:27] code 404, message File not found
+10.64.189.220 - - [22/Feb/2026 07:23:27] "GET /apple-touch-icon.png HTTP/1.1" 404 -
+10.64.189.220 - - [22/Feb/2026 07:23:27] code 404, message File not found
+10.64.189.220 - - [22/Feb/2026 07:23:27] "GET /favicon.ico HTTP/1.1" 404 -
+10.64.189.220 - - [22/Feb/2026 07:25:47] "GET / HTTP/1.1" 200 -

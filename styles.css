@@ -7,15 +7,15 @@
    CSS Variables (Design Tokens)
    ============================================ */
 :root {
-    /* LUMIRIZE Official Logo Colors - Professional & Trustworthy */
-    --color-primary: #00A99D;        /* Teal Green (公式ロゴ) - Trust & Growth */
-    --color-primary-dark: #008C82;   
-    --color-primary-light: #33BDB3;  
+    /* LUMIRIZE Official Logo Colors - Professional & Trustworthy (Updated Gradient Green) */
+    --color-primary: #1BB5A8;        /* Gradient Teal Green - Trust & Growth */
+    --color-primary-dark: #17A098;   
+    --color-primary-light: #3EC9BC;  
     --color-secondary: #8E8E8E;      /* Medium Gray (公式ロゴ) - Stability */
     --color-secondary-dark: #6E6E6E;
     --color-secondary-light: #AEAEAE;
     --color-accent: #3C3C3C;         /* Dark Gray (公式ロゴ) - Authority */
-    --color-accent-rose: #00C4B6;    /* Bright Teal - Energy */
+    --color-accent-rose: #20D4C6;    /* Bright Gradient Teal - Energy */
     
     /* Background - Clean & Neutral */
     --color-background: #F9FAFB;     
