@@ -183,9 +183,9 @@ a:hover {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(45, 36, 22, 0.85);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
     transition: all var(--transition-base);
 }
 
@@ -221,11 +221,11 @@ a:hover {
 
 .navbar__logo img {
     transition: all var(--transition-base);
-    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3)) brightness(0) invert(1);
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
 }
 
 .header.scrolled .navbar__logo img {
-    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1)) brightness(1) invert(0);
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
 }
 
 .navbar__logo:hover img {
@@ -253,7 +253,7 @@ a:hover {
 
 .navbar__link {
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.95);
+    color: var(--color-text-secondary);
     padding: var(--space-2) var(--space-3);
     border-radius: var(--radius-md);
     transition: all var(--transition-fast);
@@ -294,7 +294,7 @@ a:hover {
 .navbar__toggle-line {
     width: 25px;
     height: 3px;
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--color-primary);
     border-radius: 2px;
     transition: var(--transition-fast);
 }
