@@ -221,16 +221,11 @@ a:hover {
 
 .navbar__logo img {
     transition: all var(--transition-base);
-    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
-    background: rgba(255, 255, 255, 0.9);
-    padding: 0.5rem;
-    border-radius: 8px;
+    filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.5));
 }
 
 .header.scrolled .navbar__logo img {
     filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
-    background: transparent;
-    padding: 0;
 }
 
 .navbar__logo:hover img {
