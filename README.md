@@ -143,6 +143,56 @@
 - モダンブラウザ（Chrome, Firefox, Safari等）
 - ローカルサーバー（Python, Node.js, Live Server等）
 
+## 📊 PowerPoint自動生成（Cursor向け）
+
+CursorからPowerPoint資料を作成したい場合は、`python-pptx` を使って `.pptx` ファイルを自動生成できます。
+
+### 追加したファイル
+- `scripts/generate_pptx.py` - JSON定義からPowerPointを作成するスクリプト
+- `samples/presentation_outline.json` - 会社紹介スライドのサンプル入力
+
+### セットアップ
+```bash
+python3 -m pip install python-pptx
+```
+
+### 実行例
+```bash
+python3 scripts/generate_pptx.py --input samples/presentation_outline.json
+```
+
+成功すると、サンプルJSONの `output` 設定に基づいて以下が生成されます。
+
+```text
+outputs/lumirize_company_intro.pptx
+```
+
+### JSONフォーマット（最小例）
+```json
+{
+  "output": "outputs/sample.pptx",
+  "theme": {
+    "title_font_size_pt": 34,
+    "body_font_size_pt": 22
+  },
+  "slides": [
+    { "type": "title", "title": "タイトル", "subtitle": "サブタイトル" },
+    { "type": "section", "title": "章タイトル", "subtitle": "概要" },
+    {
+      "type": "content",
+      "title": "本文スライド",
+      "bullets": [
+        "箇条書き1",
+        { "text": "箇条書き2（インデント）", "level": 1 }
+      ]
+    }
+  ]
+}
+```
+
+利用可能な `type` は `title` / `section` / `content` です。  
+`notes` フィールドを指定すると、発表者ノートも追加できます。
+
 ### 起動方法
 
 #### Python（推奨）
