@@ -238,6 +238,19 @@ outputs/sagamihara_darc_three_patterns_report.json
 - ファイル生成可否 / ファイルサイズ
 - 失敗時は「自動補完資料スライド」を追加して再生成
 
+### スクリーンショット範囲（第1回分）リデザイン資料の自動生成
+受領した参考スクリーンショットの範囲（ページ2〜9相当）を、内容を省略せずに新デザインで再構築します。
+
+#### 実行例
+```bash
+python3 scripts/build_sagamihara_darc_redesign_part1.py
+```
+
+#### 生成ファイル
+```text
+outputs/sagamihara_darc_redesign_part1_from_screenshots.pptx
+```
+
 ### 起動方法
 
 #### Python（推奨）
