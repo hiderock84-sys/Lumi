@@ -251,6 +251,21 @@ python3 scripts/build_sagamihara_darc_redesign_part1.py
 outputs/sagamihara_darc_redesign_part1_from_screenshots.pptx
 ```
 
+### スクリーンショット範囲（第2回分）リデザイン資料 + 統合完全版
+受領した第2回分スクリーンショット（ページ10〜18相当）を新デザインで再構築し、  
+第1回分と結合した統合完全版（18枚）も同時に生成します。
+
+#### 実行例
+```bash
+python3 scripts/build_sagamihara_darc_redesign_part2.py
+```
+
+#### 生成ファイル
+```text
+outputs/sagamihara_darc_redesign_part2_from_screenshots.pptx
+outputs/sagamihara_darc_redesign_complete_from_screenshots.pptx
+```
+
 ### 起動方法
 
 #### Python（推奨）
