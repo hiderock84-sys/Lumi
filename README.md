@@ -215,6 +215,29 @@ outputs/sagamihara_darc_presentation_complete_pro_2026.pptx
 - Part A（新規）: 公式サイト + 公的情報を基に再構成したプロ仕様スライド
 - Part B（付録）: 提供PDF 18ページを画像化して順番通りに完全収録
 
+### 相模原ダルク向け「3パターン完全自動生成」
+家族会向け / 医療連携向け / 行政説明向けの3種類を、デザイン・構成・訴求軸を変えて自動生成します。  
+生成時に各ファイルへ自動バリデーションを実施し、検出エラーがあれば補完スライドを追加して再試行します。
+
+#### 実行例
+```bash
+python3 scripts/build_sagamihara_darc_three_patterns.py
+```
+
+#### 生成ファイル
+```text
+outputs/sagamihara_darc_family_support_2026.pptx
+outputs/sagamihara_darc_medical_collaboration_2026.pptx
+outputs/sagamihara_darc_public_sector_proposal_2026.pptx
+outputs/sagamihara_darc_three_patterns_report.json
+```
+
+#### 検証ロジック（自動）
+- スライド枚数しきい値
+- 必須キーワード（パターン別）
+- ファイル生成可否 / ファイルサイズ
+- 失敗時は「自動補完資料スライド」を追加して再生成
+
 ### 起動方法
 
 #### Python（推奨）

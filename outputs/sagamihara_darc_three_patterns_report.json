@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-04-29",
+  "appendix_pages": 18,
+  "patterns": [
+    {
+      "pattern": "family_support",
+      "audience": "家族会・当事者家族向け",
+      "output": "/workspace/outputs/sagamihara_darc_family_support_2026.pptx",
+      "status": "ok",
+      "retries": [
+        {
+          "attempt": 1,
+          "slides": 26,
+          "errors": [
+            "スライド枚数不足: 26 < 29"
+          ],
+          "status": "failed"
+        },
+        {
+          "attempt": 2,
+          "slides": 30,
+          "errors": [],
+          "status": "ok"
+        }
+      ],
+      "final_slides": 30
+    },
+    {
+      "pattern": "medical_collaboration",
+      "audience": "医療機関連携向け",
+      "output": "/workspace/outputs/sagamihara_darc_medical_collaboration_2026.pptx",
+      "status": "ok",
+      "retries": [
+        {
+          "attempt": 1,
+          "slides": 26,
+          "errors": [
+            "スライド枚数不足: 26 < 29"
+          ],
+          "status": "failed"
+        },
+        {
+          "attempt": 2,
+          "slides": 30,
+          "errors": [],
+          "status": "ok"
+        }
+      ],
+      "final_slides": 30
+    },
+    {
+      "pattern": "public_sector_proposal",
+      "audience": "行政・連携機関説明向け",
+      "output": "/workspace/outputs/sagamihara_darc_public_sector_proposal_2026.pptx",
+      "status": "ok",
+      "retries": [
+        {
+          "attempt": 1,
+          "slides": 26,
+          "errors": [
+            "スライド枚数不足: 26 < 29",
+            "必須キーワード不足: ネットワーク"
+          ],
+          "status": "failed"
+        },
+        {
+          "attempt": 2,
+          "slides": 31,
+          "errors": [],
+          "status": "ok"
+        }
+      ],
+      "final_slides": 31
+    }
+  ]
+}
