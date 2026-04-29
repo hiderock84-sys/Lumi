@@ -193,6 +193,28 @@ outputs/lumirize_company_intro.pptx
 利用可能な `type` は `title` / `section` / `content` です。  
 `notes` フィールドを指定すると、発表者ノートも追加できます。
 
+### 相模原ダルク向け「完全版」資料の自動生成
+共有された参考資料を保持したまま、新規のプロ仕様セクションを追加した完全版資料を生成できます。
+
+#### 必要ライブラリ
+```bash
+python3 -m pip install python-pptx pypdf pymupdf
+```
+
+#### 実行例
+```bash
+python3 scripts/build_sagamihara_darc_pro_presentation.py
+```
+
+生成ファイル:
+```text
+outputs/sagamihara_darc_presentation_complete_pro_2026.pptx
+```
+
+仕様:
+- Part A（新規）: 公式サイト + 公的情報を基に再構成したプロ仕様スライド
+- Part B（付録）: 提供PDF 18ページを画像化して順番通りに完全収録
+
 ### 起動方法
 
 #### Python（推奨）
