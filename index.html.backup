@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="株式会社ルミライズ - 住まいから始まる、尊厳ある生活再建。依存症回復者、刑務所出所者、DV被害者（母子）、外国人労働者など、住まいを必要とするすべての方へ。Housing Firstの理念で包摂的な社会を実現します。">
-    <meta name="keywords" content="住宅提供,Housing First,依存症回復,刑務所出所者支援,DV被害者支援,外国人労働者住宅,母子支援,国際支援,相模原ダルク,社会復帰支援,包摂的社会">
+    <meta name="description" content="株式会社ルミライズ - 住まいを整え、回復と再出発へ。依存症者・刑務所出所者等、行き場のない方々のための住宅提供サービス。相模原ダルク利用者のナイトケアハウスを運営。">
+    <meta name="keywords" content="住宅提供,依存症回復,刑務所出所者支援,ナイトケアハウス,相模原ダルク,社会復帰支援,回復支援,居住支援">
     <title>株式会社ルミライズ - 住まいを整え、回復と再出発へ</title>
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800;900&family=Noto+Serif+JP:wght@400;500;600;700;800;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
@@ -57,49 +57,50 @@
 
     <main id="main-content" role="main">
         <!-- Hero Section -->
-        <section id="hero" class="hero" style="position: relative; min-height: 85vh; display: flex; align-items: center; overflow: hidden;">
-            <!-- 背景画像 -->
-            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.30) 100%), url('https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=1920&q=95') center/cover; z-index: 1;"></div>
-            
-            <!-- コンテンツ -->
-            <div class="container" style="position: relative; z-index: 2;">
-                <div class="hero__content" style="max-width: 100%; margin: 0; text-align: left; padding: 3rem 1.5rem 3rem 1.5rem;">
-                    <!-- メインキャッチコピー -->
-                    <div style="margin-bottom: 2rem;">
-                        <p style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.3em; color: #6B7280; margin-bottom: 1.5rem; text-transform: uppercase; opacity: 0.85; font-family: 'Noto Sans JP', sans-serif;">
-                            Housing First
-                        </p>
-                        <h1 style="font-size: clamp(2rem, 9vw, 3rem); font-weight: 700; line-height: 1.5; color: #111827; margin-bottom: 2rem; letter-spacing: 0.02em; font-family: 'Noto Serif JP', serif;">
-                            住まいから、<br>
-                            <span style="color: #1BB5A8; font-weight: 800;">尊厳ある生活再建を。</span>
-                        </h1>
-                        <p style="font-size: clamp(1rem, 4vw, 1.15rem); font-weight: 500; line-height: 1.85; color: #FFFFFF; margin: 0 0 1.5rem 0; letter-spacing: 0.03em; font-family: 'Noto Sans JP', sans-serif; text-shadow: 0 2px 8px rgba(0,0,0,0.6), 0 0 20px rgba(0,0,0,0.4);">
-                            依存症からの回復を目指す方、<br>
-                            刑務所を出所された方、<br>
-                            DV被害を受けた母子、<br>
-                            日本で働く外国人労働者──
-                        </p>
-                        <p style="font-size: clamp(1rem, 4vw, 1.15rem); font-weight: 600; line-height: 1.85; color: #FFFFFF; margin: 0 0 1.5rem 0; letter-spacing: 0.03em; font-family: 'Noto Sans JP', sans-serif; text-shadow: 0 2px 8px rgba(0,0,0,0.6), 0 0 20px rgba(0,0,0,0.4);">
-                            すべての方に、<br>
-                            安心して暮らせる住まいを。
-                        </p>
-                        <p style="font-size: clamp(0.95rem, 3.8vw, 1.1rem); font-weight: 600; line-height: 1.8; color: #FFFFFF; margin: 0; letter-spacing: 0.03em; font-family: 'Noto Sans JP', sans-serif; text-shadow: 0 2px 8px rgba(0,0,0,0.6), 0 0 20px rgba(0,0,0,0.4);">
-                            住まいは、人間の尊厳の基盤です。<br>
-                            <span style="display: block; margin-top: 1rem;">排除ではなく受け入れを。<br>管理ではなく尊厳を。</span>
-                        </p>
-                    </div>
-                    
-                    <!-- ボタン -->
-                    <div class="hero__actions" style="margin-top: 2rem; margin-bottom: 2rem; display: flex; flex-direction: column; gap: 1rem; width: 100%;">
-                        <a href="tel:042-704-8308" class="btn btn--primary btn--large" style="background: #1BB5A8 !important; color: white; padding: 1.1rem 2rem; border-radius: 8px; font-weight: 700; font-size: 1rem; text-decoration: none; box-shadow: 0 4px 16px rgba(27,181,168,0.4); display: flex; align-items: center; justify-content: center; gap: 0.5rem; transition: all 0.3s ease; border: none; letter-spacing: 0.05em; font-family: 'Noto Sans JP', sans-serif; width: 100%;">
-                            📞 今すぐ相談する
+        <section id="hero" class="hero" style="background: linear-gradient(135deg, rgba(45, 36, 22, 0.85) 0%, rgba(92, 74, 58, 0.80) 50%, rgba(140, 122, 106, 0.75) 100%), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=90') center/cover;">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title" style="font-size: clamp(2.75rem, 9vw, 5.5rem); font-weight: 900; line-height: 1.1; margin-bottom: 2.5rem; text-shadow: 0 6px 30px rgba(0,0,0,0.7); letter-spacing: -0.03em;">
+                        <span style="display: block; margin-bottom: 0.5rem;">やり直せる。</span>
+                        <span style="color: #FFA85C; text-shadow: 0 0 40px rgba(255,168,92,0.9), 0 6px 30px rgba(0,0,0,0.7); font-size: clamp(3rem, 10vw, 6rem); display: block;">何度でも。</span>
+                    </h1>
+                    <p class="hero__description" style="font-size: clamp(1.375rem, 4vw, 2rem); font-weight: 800; line-height: 1.5; margin-bottom: 1rem; text-shadow: 0 3px 15px rgba(0,0,0,0.6); letter-spacing: 0.03em;">
+                        <span style="display: block; margin-bottom: 0.75rem;">依存症。刑務所。路上生活。</span>
+                        <span style="font-size: clamp(1.75rem, 5vw, 2.5rem); color: #FFD166; font-weight: 900; text-shadow: 0 0 30px rgba(255,209,102,0.8), 0 3px 15px rgba(0,0,0,0.6); display: block; margin-top: 0.5rem;">全部、ここで終わりにする。</span>
+                    </p>
+                    <p class="hero__description" style="font-size: clamp(1.125rem, 3vw, 1.5rem); font-weight: 600; line-height: 1.8; margin-bottom: 3rem; text-shadow: 0 2px 10px rgba(0,0,0,0.5); opacity: 0.98; border-left: 4px solid #FFA85C; padding-left: 1.5rem; margin-top: 2rem;">
+                        一人で抱えるな。<br>
+                        誰も見捨てない。絶対に諦めない。<br>
+                        <span style="font-weight: 800; color: #FFD166;">今、手を伸ばせ。</span>
+                    </p>
+                    <div class="hero__actions">
+                        <a href="tel:042-704-8308" class="btn btn--primary btn--large">
+                            📞 今すぐ電話で相談する
                         </a>
-                        <a href="#services" class="btn btn--secondary btn--large" style="background: rgba(255,255,255,0.95); color: #1BB5A8; padding: 1.1rem 2rem; border-radius: 8px; font-weight: 700; font-size: 1rem; text-decoration: none; border: 2px solid #1BB5A8; display: flex; align-items: center; justify-content: center; gap: 0.5rem; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.1); letter-spacing: 0.05em; font-family: 'Noto Sans JP', sans-serif; width: 100%;">
+                        <a href="#services" class="btn btn--secondary btn--large">
                             サービス内容を見る
                         </a>
                     </div>
                     
-
+                    <!-- Stats -->
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-card__number">15年+</div>
+                            <div class="stat-card__label">支援活動の実績</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__number">24時間</div>
+                            <div class="stat-card__label">相談受付体制</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__number">100%</div>
+                            <div class="stat-card__label">寄り添う支援</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__number">複数</div>
+                            <div class="stat-card__label">住宅提供実績</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -111,9 +112,8 @@
                     <span class="section__badge">About Us</span>
                     <h2 class="section__title">私たちについて</h2>
                     <p class="section__description">
-                        株式会社ルミライズは、一般社団法人相模原ダルクと連携し、<br>
-                        依存症回復者、刑務所出所者、DV被害者（母子）、外国人労働者など、<br>
-                        住まいを必要とするすべての方々への包摂的な住宅提供サービスを行う企業です。
+                        株式会社ルミライズは、一般社団法人相模原ダルク代表理事・田中秀泰が設立した、<br>
+                        依存症者・刑務所出所者等、行き場のない方々への住宅提供サービスを行う企業です。
                     </p>
                 </div>
 
@@ -123,7 +123,7 @@
                         <div class="card__icon">🌟</div>
                         <h3 class="card__title">私たちの使命</h3>
                         <p class="card__description">
-                            私たちの使命は、依存症からの回復を目指す方々、刑務所を出所された方々、DV被害を受けた母子、外国人労働者の方々など、住まいを必要とするすべての人に、安心して暮らせる住まいを提供することです。住まいは人生の基盤であり、人間の尊厳そのものです。安定した住まいがあってこそ、回復と再出発への道を歩むことができます。
+                            私たちの使命は、住まいを失った方々、依存症からの回復を目指す方々、刑務所を出所された方々に、安心して暮らせる住まいを提供することです。住まいは人生の基盤です。安定した住まいがあってこそ、回復への道を歩むことができます。
                         </p>
                         <p class="card__description">
                             私たちは、単に「部屋を貸す」だけでなく、一人ひとりの状況に寄り添い、生活の再建をサポートします。あなたが再び社会の一員として、自分らしい人生を歩めるよう、全力でお手伝いします。
@@ -145,123 +145,26 @@
 
 
 
-                <!-- 企業理念セクション -->
-                <div class="card" style="margin-top: 3rem; padding: 4rem 3rem; background: #FAFAFA; color: #1F2937;">
-                    <h3 style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem; color: #1BB5A8; font-weight: 900;">企業理念</h3>
-                    <h4 style="text-align: center; font-size: 1.75rem; margin-bottom: 1.5rem; color: #1F2937; font-weight: 700;">住まいから、人生の再出発を支える</h4>
-                    <p style="text-align: center; color: #6B7280; font-weight: 500; margin-bottom: 4rem; font-size: 1.125rem;">株式会社ルミライズ</p>
+                <!-- Representative Message -->
+                <div class="card" style="margin-top: 3rem; padding: 3rem; background: linear-gradient(135deg, #FFF9F5 0%, #FFE8DC 100%);">
+                    <h3 class="card__title" style="text-align: center; font-size: 2rem; margin-bottom: 1rem;">代表からのメッセージ</h3>
+                    <p style="text-align: center; color: #FF8C42; font-weight: 600; margin-bottom: 2rem;">田中 秀泰<br><span style="font-size: 0.9rem; color: #8C7A6A;">代表取締役 / 一般社団法人相模原ダルク 代表理事</span></p>
                     
-                    <div style="font-size: 1.2rem; line-height: 2.1; color: #374151; max-width: 800px; margin: 0 auto;">
-                        <p style="margin-bottom: 3.5rem; text-indent: 1em; color: #1F2937; line-height: 2.2;">
-                            株式会社ルミライズは、「住まいを整えることこそが再出発の第一歩である」という信念のもと設立されました。
+                    <div style="font-size: 1.125rem; line-height: 2; color: #5C4A3A;">
+                        <p style="margin-bottom: 1.5rem;">
+                            私自身、在日韓国人3世として生まれ、暴力と差別、薬物依存という壮絶な過去を経験してきました。18歳での発砲事件、暴力団関係者としての青春、覚醒剤依存による逮捕。あれだけ嫌いだった父のような人生を自分も歩んでいました。
                         </p>
-                        
-                        <p style="margin-bottom: 4rem; text-indent: 1em; color: #1F2937; line-height: 2.2;">
-                            刑務所出所後や依存症からの回復の過程にある方々は、しばしば住居の不安定さという大きな壁に直面します。住む場所がなければ就労は続かず、生活が安定しなければ回復も揺らぎます。孤立は不安を生み、その不安が再び過ちへとつながる可能性を高めます。
+                        <p style="margin-bottom: 1.5rem;">
+                            しかし33歳の時、恩師・白川雄一郎氏との出会いをきっかけに相模原ダルクに入所し、痛みと苦しみを乗り越えることができました。回復には長い時間がかかりました。何度も挫折しかけました。しかし、支えてくれる人々がいました。安心できる居場所がありました。
                         </p>
-                        
-                        <p style="margin-bottom: 4.5rem; font-weight: 600; font-size: 1.25rem; color: #1F2937; text-align: center; line-height: 2.1;">
-                            私たちは、再犯防止を罰や管理の強化としてではなく、<br>
-                            生活基盤の整備として捉えています。
+                        <p style="margin-bottom: 1.5rem;">
+                            今、同じような痛みを抱える方々に寄り添い、真の意味での回復支援を提供することが、私の使命であり、株式会社ルミライズの存在意義です。
                         </p>
-                        
-                        <div style="padding: 0; margin: 4.5rem 0;">
-                            <p style="margin-bottom: 2rem; font-weight: 800; font-size: 1.75rem; color: #1BB5A8;">Housing First という思想</p>
-                            <p style="margin-bottom: 2rem; font-size: 1.2rem; line-height: 2.1; color: #1F2937;">
-                                ルミライズの理念の中心にあるのは、Housing First（ハウジング・ファースト）の考え方です。
-                            </p>
-                            <p style="margin-bottom: 2rem; font-size: 1.2rem; line-height: 2.1; color: #1F2937;">
-                                それは、回復や更生を条件に住まいを提供するのではなく、まず安定した住環境を確保し、その上で人生の再建を支援するという思想です。
-                            </p>
-                            <p style="margin-bottom: 0; font-size: 1.2rem; line-height: 2.1; color: #1F2937;">
-                                <strong style="color: #1BB5A8; font-size: 1.1em;">住まいは成果への報酬ではありません。</strong><br>
-                                人が尊厳を保ち、自らの力を取り戻すための前提条件です。
-                            </p>
-                        </div>
-                        
-                        <div style="padding: 0; margin: 4.5rem 0;">
-                            <p style="margin-bottom: 2rem; font-weight: 800; font-size: 1.75rem; color: #1BB5A8;">ダルクとの関係性と、私たちの立場</p>
-                            <p style="margin-bottom: 2rem; font-size: 1.2rem; line-height: 2.1; color: #1F2937;">
-                                創設者は千葉ダルクに入所し回復の道を歩んだ経験を持ち、その後、相模原ダルクを開設しました。しかし、私たちは一つの現実を理解しています。
-                            </p>
-                            <p style="margin-bottom: 2rem; font-weight: 700; font-size: 1.3rem; color: #1F2937; text-align: center;">
-                                万人にダルクのプログラムが適合するわけではありません。
-                            </p>
-                            <p style="margin-bottom: 2rem; font-size: 1.2rem; line-height: 2.1; color: #1F2937;">
-                                もちろん、希望する方にはダルクを紹介します。しかし、住宅の提供や生活環境の整備は、プログラム参加の見返りとして行うものでは決してありません。
-                            </p>
-                            <p style="margin-bottom: 2rem; font-size: 1.2rem; line-height: 2.1; color: #1F2937;">
-                                むしろ、ダルク等の施設に入所しない、あるいは入所できない方に対してこそ、住居ややり直しの環境を整える必要があると私たちは考えています。
-                            </p>
-                            <p style="margin-bottom: 0; font-weight: 600; font-size: 1.25rem; color: #1BB5A8; text-align: center; line-height: 2.1;">
-                                回復の形は一つではありません。<br>
-                                支援もまた、多様であるべきです。
-                            </p>
-                        </div>
-                        
-                        <div style="padding: 0; margin: 4.5rem 0;">
-                            <p style="margin-bottom: 2rem; font-weight: 800; font-size: 1.75rem; color: #1BB5A8;">私たちの使命</p>
-                            <p style="margin-bottom: 2rem; font-size: 1.2rem; line-height: 2.1; color: #1F2937;">
-                                私たちの使命は、住まいを入口に、就労支援、医療・福祉との連携を通じて、再び社会の中で暮らせる環境を設計することです。依存症回復者、刑務所出所者、DV被害を受けた母子、外国人労働者——すべての方に、人間としての尊厳ある生活を提供します。
-                            </p>
-                            <p style="margin-bottom: 1.5rem; font-size: 1.2rem; line-height: 2.1; color: #1F2937;">
-                                再犯防止とは、人の尊厳を支え続けること。<br>
-                                可能性を疑うのではなく、その人の力を信じること。<br>
-                                排除ではなく、再統合を選ぶこと。
-                            </p>
-                        </div>
-                        
-                        <div style="text-align: center; margin-top: 5rem;">
-                            <p style="font-weight: 900; font-size: 2rem; color: #1BB5A8; line-height: 1.6;">
-                                住まいから、人生を立て直す。<br>
-                                <span style="font-size: 1.35rem; color: #1F2937; display: block; margin-top: 1.5rem;">それが、株式会社ルミライズの理念です。</span>
-                            </p>
-                        </div>
+                        <p style="font-weight: 700; font-size: 1.25rem; color: #FF8C42; text-align: center;">
+                            誰もが再び光を見出せる。<br>
+                            その信念のもと、私たちは支援を続けます。
+                        </p>
                     </div>
-                    
-                    <!-- 代表の経歴（折り畳み可能） -->
-                    <details style="margin-top: 5rem;">
-                        <summary style="cursor: pointer; font-weight: 700; font-size: 1.25rem; color: #1BB5A8; text-align: center; list-style: none; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
-                            <span>▼</span> 代表の経歴と想い <span>▼</span>
-                        </summary>
-                        <div style="margin-top: 3rem; font-size: 1.125rem; line-height: 2; color: #374151; padding: 0;">
-                            <p style="margin-bottom: 2rem;">
-                                私は在日韓国人三世として生まれ、暴力団幹部の父を持つ家庭環境の中で育ちました。小学生の頃から柔道に打ち込み、全国大会に出場するなど将来を期待されていましたが、高校生の頃、警察官から発砲される事件に巻き込まれたことで競技の道は閉ざされます。その出来事を境に、私は行き場を失い、やがて闇の世界へと足を踏み入れていきました。
-                            </p>
-                            <p style="margin-bottom: 2rem;">
-                                10代では愚連隊グループのリーダーとして、20代では複数店舗に及ぶ闇金融グループを立ち上げるなど、裏社会で頭角を表す一方で、依存の問題に苦しみ、心も生活も崩れていきました。
-                            </p>
-                            <p style="margin-bottom: 2rem;">
-                                転機となったのは、後に恩師となる千葉ダルク代表・白川雄一郎氏との出会いです。私は千葉ダルクに入所し、回復の道を歩み始めました。そしてその経験を通じて、「同じように行き場を失った人が、安心して戻れる場所をつくりたい」という思いが強まり、相模原ダルクを開設するに至りました。
-                            </p>
-                            <p style="margin-bottom: 2rem; font-weight: 600;">
-                                しかし同時に、私は一つの大切な事実を学びました。<br>
-                                万人にダルクのプログラムが合うわけではないということです。
-                            </p>
-                            <p style="margin-bottom: 2rem;">
-                                もちろん、本人が希望すればダルクを紹介します。回復プログラムが大きな支えになる方も確かにいます。しかし、住宅や生活基盤の整備は、プログラム参加の見返りとして提供されるものでは決してありません。
-                            </p>
-                            <p style="margin-bottom: 2.5rem; font-weight: 700; font-size: 1.2rem; color: #1BB5A8; text-align: center;">
-                                住まいは条件ではなく、前提です。
-                            </p>
-                            <p style="margin-bottom: 2rem;">
-                                むしろ、ダルク等の施設に入所しない、あるいは入所できない方にこそ、住居ややり直しの環境を整える必要があると、私は強く感じています。回復の形は一つではありません。人それぞれのペースがあり、方法があります。だからこそ、まずは安心して暮らせる基盤を整えることが重要なのです。
-                            </p>
-                            <p style="margin-bottom: 2rem;">
-                                回復は一直線ではありません。時間もかかります。挫折もあります。それでも、支えてくれる人がいて、安心して身を置ける場所があれば、人は少しずつ前に進むことができます。
-                            </p>
-                            <p style="margin-bottom: 2rem;">
-                                今、同じような痛みや不安を抱える方々に寄り添い、その人に合ったやり直しの環境を整えること。それが私の使命であり、株式会社ルミライズの存在意義です。
-                            </p>
-                            <p style="margin-bottom: 1rem; font-weight: 600; font-size: 1.15rem; color: #1F2937;">
-                                人は、環境が整えば立ち上がる力を持っています。<br>
-                                誰もがもう一度、自分の中に光を見つけられる。
-                            </p>
-                            <p style="font-weight: 700; font-size: 1.25rem; color: #1BB5A8; text-align: center; margin-top: 3rem;">
-                                その信念のもと、私たちは支援を続けていきます。
-                            </p>
-                        </div>
-                    </details>
                 </div>
             </div>
         </section>
@@ -404,580 +307,6 @@
                 </div>
             </div>
         </section>
-<!-- NEW SECTION 1: Evidence-Based Research Data (Housing First Effectiveness) -->
-<section id="evidence-section" class="section section--gradient-warm">
-    <div class="container">
-        <div class="section__header">
-            <span class="section__badge">🔬 Evidence-Based Approach</span>
-            <h2 class="section__title">エビデンスに基づく支援</h2>
-            <p class="section__description">
-                国際的な研究データが証明する Housing First アプローチの圧倒的な有効性
-            </p>
-        </div>
-
-        <div class="evidence-grid evidence-cards">
-            <!-- Housing First Success Rate -->
-            <div class="evidence-card evidence-card--highlight evidence-cards">
-                <div class="evidence-card__icon">📊</div>
-                <div class="evidence-card__stat">88%</div>
-                <div class="evidence-card__label">ホームレス状態の減少率</div>
-                <p class="evidence-card__detail">
-                    26件の研究を分析した系統的レビューによると、Housing Firstプログラムは従来型のTreatment First（治療優先）プログラムと比較して、ホームレス状態を88%減少させました。
-                </p>
-                <div class="evidence-card__source">出典: NLIHC Systematic Review of 26 Studies</div>
-            </div>
-
-            <!-- Housing Stability Improvement -->
-            <div class="evidence-card evidence-card--highlight evidence-cards">
-                <div class="evidence-card__icon">🏠</div>
-                <div class="evidence-card__stat">41%</div>
-                <div class="evidence-card__label">住居安定性の向上</div>
-                <p class="evidence-card__detail">
-                    同じ研究で、Housing Firstは住居の安定性を41%改善。安定した住まいを基盤に、生活の質が大幅に向上し、病院や救急外来の利用が減少しました。
-                </p>
-                <div class="evidence-card__source">出典: NLIHC Evidence Review</div>
-            </div>
-
-            <!-- Long-term Retention Rates -->
-            <div class="evidence-card evidence-card--success evidence-cards">
-                <div class="evidence-card__icon">📈</div>
-                <div class="evidence-card__stat">79% → 88%</div>
-                <div class="evidence-card__label">長期的な住居維持率</div>
-                <p class="evidence-card__detail">
-                    Pathways to Housing（米国初のHousing Firstプログラム）の研究では、6ヶ月後の住居維持率が79%、5年後には88%に達しました。対照群はわずか47%でした。
-                </p>
-                <div class="evidence-card__source">出典: Pathways to Housing Major Studies (3 trials)</div>
-            </div>
-
-            <!-- Cost Effectiveness -->
-            <div class="evidence-card evidence-card--economic evidence-cards">
-                <div class="evidence-card__icon">💰</div>
-                <div class="evidence-card__stat">$1.44</div>
-                <div class="evidence-card__label">投資1ドルあたりの社会的便益</div>
-                <p class="evidence-card__detail">
-                    米国Community Preventive Services Task Forceの系統的レビューによると、Housing Firstプログラムへの1ドルの投資は、医療費、司法費用、福祉費用の削減により、社会に1.44ドルの便益をもたらします。
-                </p>
-                <div class="evidence-card__source">出典: CPSTF Systematic Review</div>
-            </div>
-
-            <!-- Substance Use Reduction -->
-            <div class="evidence-card evidence-cards">
-                <div class="evidence-card__icon">💊</div>
-                <div class="evidence-card__stat">減少</div>
-                <div class="evidence-card__label">物質使用の大幅な減少</div>
-                <p class="evidence-card__detail">
-                    Housing Firstプログラムの参加者は、禁酒を条件とするプログラムの参加者と比較して、物質使用が減少し、特にアルコール摂取と泥酔の可能性が大幅に低下しました。
-                </p>
-                <div class="evidence-card__source">出典: Multiple Comparative Studies</div>
-            </div>
-
-            <!-- Mental Health Improvement -->
-            <div class="evidence-card evidence-cards">
-                <div class="evidence-card__icon">🧠</div>
-                <div class="evidence-card__stat">86%</div>
-                <div class="evidence-card__label">重度精神疾患者の住居確保率</div>
-                <p class="evidence-card__detail">
-                    物質使用障害と重度精神疾患の診断を受け、救急外来の頻繁な利用と逮捕歴がある対象者の86%が、永続的な支援付き住宅に入居し、維持することに成功しました。
-                </p>
-                <div class="evidence-card__source">出典: Housing First Mental Health Study</div>
-            </div>
-
-            <!-- Incarceration Reduction -->
-            <div class="evidence-card evidence-card--impact">
-                <div class="evidence-card__icon">🔓</div>
-                <div class="evidence-card__stat">34% - 40%</div>
-                <div class="evidence-card__label">警察接触・逮捕の減少</div>
-                <p class="evidence-card__detail">
-                    Denver Supportive Housing Social Impact Bond Initiative（2016年開始）では、支援付き住宅により警察との接触が34%、逮捕が40%、刑務所滞在日数が27%減少しました。
-                </p>
-                <div class="evidence-card__source">出典: Denver SIB Initiative (2016-2019)</div>
-            </div>
-
-            <!-- Hospital Cost Savings -->
-            <div class="evidence-card evidence-card--economic">
-                <div class="evidence-card__icon">🏥</div>
-                <div class="evidence-card__stat">$12,146</div>
-                <div class="evidence-card__label">年間一人あたりの公的コスト削減</div>
-                <p class="evidence-card__detail">
-                    ニューヨーク市の研究では、精神疾患のあるホームレス経験者に支援付き住宅を提供することで、医療・矯正・シェルター利用の年間コストが一人あたり12,146ドル削減されました。
-                </p>
-                <div class="evidence-card__source">出典: NYC Supportive Housing Cost Study</div>
-            </div>
-        </div>
-
-        <!-- Key Findings Summary Box -->
-        <div class="key-findings-box">
-            <h3 class="key-findings-box__title">🔑 重要な研究結果まとめ</h3>
-            <div class="key-findings-grid">
-                <div class="key-finding">
-                    <span class="key-finding__icon">✅</span>
-                    <p>Housing Firstは従来の「治療優先」プログラムより効果的にホームレス状態を減少させます</p>
-                </div>
-                <div class="key-finding">
-                    <span class="key-finding__icon">✅</span>
-                    <p>物質使用を条件としないアプローチは、むしろ物質使用の減少につながります</p>
-                </div>
-                <div class="key-finding">
-                    <span class="key-finding__icon">✅</span>
-                    <p>安定した住まいは、精神疾患のある方の治療継続と生活の質向上に不可欠です</p>
-                </div>
-                <div class="key-finding">
-                    <span class="key-finding__icon">✅</span>
-                    <p>投資に対する社会的便益は1.44倍、医療・司法コストを大幅に削減します</p>
-                </div>
-                <div class="key-finding">
-                    <span class="key-finding__icon">✅</span>
-                    <p>ホームレス-刑務所サイクルを断ち切り、警察接触・逮捕を30-40%減少させます</p>
-                </div>
-                <div class="key-finding">
-                    <span class="key-finding__icon">✅</span>
-                    <p>長期的な住居維持率は最大98%に達し、持続可能な支援を実現します</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- NEW SECTION 2: Competitive Advantages & Theoretical Framework -->
-<section id="theory-section" class="section section--white">
-    <div class="container">
-        <div class="section__header">
-            <span class="section__badge">💎 Our Unique Value</span>
-            <h2 class="section__title">ルミライズの圧倒的な優位性</h2>
-            <p class="section__description">
-                理論的根拠と実践経験に裏打ちされた、他にはない支援体制
-            </p>
-        </div>
-
-        <!-- Theoretical Framework -->
-        <div class="theory-framework">
-            <h3 class="theory-framework__title">📚 理論的基盤：なぜ私たちのアプローチが効果的なのか</h3>
-            
-            <div class="theory-cards-grid">
-                <!-- Maslow's Hierarchy -->
-                <div class="theory-card theory-cards">
-                    <div class="theory-card__header">
-                        <span class="theory-card__icon">🔺</span>
-                        <h4>マズローの欲求階層説</h4>
-                    </div>
-                    <p class="theory-card__principle">
-                        <strong>基本原理:</strong> 生理的欲求と安全の欲求が満たされて初めて、人は高次の欲求（所属、自尊心、自己実現）を追求できる
-                    </p>
-                    <p class="theory-card__application">
-                        <strong>私たちの実践:</strong> 住まい（安全の欲求）を最優先で提供することで、回復プログラムや就労支援（高次の欲求）への取り組みを可能にします
-                    </p>
-                    <div class="theory-card__evidence">
-                        <strong>エビデンス:</strong> 研究により、住居が安定した人は薬物治療プログラムへの参加率が3倍高いことが証明されています
-                    </div>
-                </div>
-
-                <!-- Trauma-Informed Care -->
-                <div class="theory-card theory-cards">
-                    <div class="theory-card__header">
-                        <span class="theory-card__icon">💚</span>
-                        <h4>トラウマインフォームドケア</h4>
-                    </div>
-                    <p class="theory-card__principle">
-                        <strong>基本原理:</strong> トラウマ体験が行動や健康に与える影響を理解し、再トラウマ化を防ぐケアを提供
-                    </p>
-                    <p class="theory-card__application">
-                        <strong>私たちの実践:</strong> 条件を課さず、選択と自己決定を尊重。プライバシーを守り、信頼関係を築く中で、個々のペースで回復を支援します
-                    </p>
-                    <div class="theory-card__evidence">
-                        <strong>エビデンス:</strong> トラウマインフォームドな支援付き住宅は、住居維持率が15-25%高く、精神症状も改善されることが示されています
-                    </div>
-                </div>
-
-                <!-- Social Determinants of Health -->
-                <div class="theory-card theory-cards">
-                    <div class="theory-card__header">
-                        <span class="theory-card__icon">🌐</span>
-                        <h4>健康の社会的決定要因</h4>
-                    </div>
-                    <p class="theory-card__principle">
-                        <strong>基本原理:</strong> 健康状態は医療だけでなく、住居、経済、教育、社会的つながりなどの社会的要因に大きく影響される
-                    </p>
-                    <p class="theory-card__application">
-                        <strong>私たちの実践:</strong> 住宅提供だけでなく、就労支援、医療機関連携、社会的ネットワーク構築など、包括的な社会的決定要因にアプローチします
-                    </p>
-                    <div class="theory-card__evidence">
-                        <strong>エビデンス:</strong> 包括的な社会的支援を提供するプログラムは、住宅のみの支援と比較して、3年後の社会復帰率が2.5倍高いことが実証されています
-                    </div>
-                </div>
-
-                <!-- Recovery Capital Theory -->
-                <div class="theory-card theory-cards">
-                    <div class="theory-card__header">
-                        <span class="theory-card__icon">💎</span>
-                        <h4>回復資本理論</h4>
-                    </div>
-                    <p class="theory-card__principle">
-                        <strong>基本原理:</strong> 依存症からの回復には、個人的資源（スキル、健康）、社会的資源（人間関係、住居）、地域資源（サービス、雇用機会）が必要
-                    </p>
-                    <p class="theory-card__application">
-                        <strong>私たちの実践:</strong> 安定した住まい（社会的資本）を提供し、スキル訓練（個人的資本）と関連機関連携（地域資本）により、総合的な回復資本を構築します
-                    </p>
-                    <div class="theory-card__evidence">
-                        <strong>エビデンス:</strong> 回復資本が高い人は、5年後の断薬率が75%以上であり、低い人（25%以下）と比較して3倍の成功率を示します
-                    </div>
-                </div>
-
-                <!-- Harm Reduction -->
-                <div class="theory-card theory-cards">
-                    <div class="theory-card__header">
-                        <span class="theory-card__icon">🛡️</span>
-                        <h4>ハームリダクション</h4>
-                    </div>
-                    <p class="theory-card__principle">
-                        <strong>基本原理:</strong> 完全な禁酒・禁薬を強制するのではなく、まず健康と安全への害を減らし、段階的な改善を支援
-                    </p>
-                    <p class="theory-card__application">
-                        <strong>私たちの実践:</strong> 物質使用を入居条件にせず、安全な住環境で徐々に使用を減らせるよう支援。薬物補助療法(MAT)の継続も支援します
-                    </p>
-                    <div class="theory-card__evidence">
-                        <strong>エビデンス:</strong> ハームリダクションアプローチは、禁欲ベースのプログラムと比較して、オーバードーズ死亡率を50%減少させ、感染症を70%削減します
-                    </div>
-                </div>
-
-                <!-- Desistance Theory -->
-                <div class="theory-card theory-cards">
-                    <div class="theory-card__header">
-                        <span class="theory-card__icon">🔄</span>
-                        <h4>離脱理論（犯罪からの離脱）</h4>
-                    </div>
-                    <p class="theory-card__principle">
-                        <strong>基本原理:</strong> 犯罪からの離脱には、アイデンティティの変化、社会的絆の形成、生活の安定が不可欠
-                    </p>
-                    <p class="theory-card__application">
-                        <strong>私たちの実践:</strong> 出所者に安定した住まいと前向きな社会的役割を提供し、「元受刑者」から「地域の一員」へのアイデンティティ変化を支援します
-                    </p>
-                    <div class="theory-card__evidence">
-                        <strong>エビデンス:</strong> 安定した住居と雇用を持つ出所者の2年再犯率は23%であり、持たない人（68%）と比較して1/3以下です
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Competitive Advantage Matrix -->
-        <div class="advantage-matrix">
-            <h3 class="advantage-matrix__title">🏆 他社との差別化要因</h3>
-            
-            <div class="advantage-comparison">
-                <table class="advantage-table">
-                    <thead>
-                        <tr>
-                            <th>評価項目</th>
-                            <th>一般的な支援団体</th>
-                            <th>行政の住宅支援</th>
-                            <th class="highlight-col">ルミライズ</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>支援哲学</strong></td>
-                            <td>条件付き支援が多い</td>
-                            <td>制度的制約が多い</td>
-                            <td class="highlight-col">Housing First + ハームリダクション</td>
-                        </tr>
-                        <tr>
-                            <td><strong>理論的基盤</strong></td>
-                            <td>経験則中心</td>
-                            <td>行政的基準</td>
-                            <td class="highlight-col">6つの学術理論に基づく科学的アプローチ</td>
-                        </tr>
-                        <tr>
-                            <td><strong>エビデンス</strong></td>
-                            <td>限定的</td>
-                            <td>一般統計のみ</td>
-                            <td class="highlight-col">国際研究データに基づく効果測定</td>
-                        </tr>
-                        <tr>
-                            <td><strong>代表者の経験</strong></td>
-                            <td>専門職として</td>
-                            <td>行政職員</td>
-                            <td class="highlight-col">当事者経験＋15年の実践（相模原ダルク代表）</td>
-                        </tr>
-                        <tr>
-                            <td><strong>支援の包括性</strong></td>
-                            <td>特定分野のみ</td>
-                            <td>申請主義</td>
-                            <td class="highlight-col">住宅+生活+就労+医療+福祉の総合支援</td>
-                        </tr>
-                        <tr>
-                            <td><strong>柔軟性</strong></td>
-                            <td>プログラム固定</td>
-                            <td>規則厳守</td>
-                            <td class="highlight-col">個別ニーズに応じたオーダーメイド支援</td>
-                        </tr>
-                        <tr>
-                            <td><strong>長期的関与</strong></td>
-                            <td>期間限定が多い</td>
-                            <td>期限付き</td>
-                            <td class="highlight-col">必要な限り継続的にサポート</td>
-                        </tr>
-                        <tr>
-                            <td><strong>成果測定</strong></td>
-                            <td>活動報告中心</td>
-                            <td>入居数など量的指標</td>
-                            <td class="highlight-col">継続率・満足度・QOLなど多角的評価</td>
-                        </tr>
-                        <tr>
-                            <td><strong>コスト効率</strong></td>
-                            <td>データ不足</td>
-                            <td>計算未実施</td>
-                            <td class="highlight-col">社会的投資収益率(SROI) 1.44倍を目標</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <!-- SWOT Analysis -->
-        <div class="swot-analysis">
-            <h3 class="swot-analysis__title">📊 SWOT分析：私たちの強み・機会</h3>
-            <div class="swot-grid">
-                <div class="swot-card swot-card--strength">
-                    <h4 class="swot-card__title">💪 Strengths（強み）</h4>
-                    <ul class="swot-card__list">
-                        <li>代表者の当事者経験と15年の実践知</li>
-                        <li>相模原ダルクとの強固な連携</li>
-                        <li>Housing Firstの科学的エビデンス</li>
-                        <li>包括的な支援ネットワーク</li>
-                        <li>個別化されたケアプラン</li>
-                        <li>24時間対応体制</li>
-                        <li>高い住居維持率（推定80%以上）</li>
-                    </ul>
-                </div>
-
-                <div class="swot-card swot-card--weakness">
-                    <h4 class="swot-card__title">📉 Weaknesses（弱み）</h4>
-                    <ul class="swot-card__list">
-                        <li>知名度がまだ限定的</li>
-                        <li>提供住宅数に限りがある</li>
-                        <li>公的補助の依存度</li>
-                        <li>スタッフ数の制約</li>
-                        <li>定量的データの蓄積途上</li>
-                    </ul>
-                </div>
-
-                <div class="swot-card swot-card--opportunity">
-                    <h4 class="swot-card__title">🌟 Opportunities（機会）</h4>
-                    <ul class="swot-card__list">
-                        <li>再犯防止推進法の施行（2016年）</li>
-                        <li>依存症対策の社会的注目度上昇</li>
-                        <li>Housing Firstの国際的実証</li>
-                        <li>生活困窮者自立支援法の拡充</li>
-                        <li>SIB（社会的インパクト投資）の広がり</li>
-                        <li>企業のCSR・ESG投資の増加</li>
-                        <li>デジタル化による効率的支援</li>
-                    </ul>
-                </div>
-
-                <div class="swot-card swot-card--threat">
-                    <h4 class="swot-card__title">⚠️ Threats（脅威）</h4>
-                    <ul class="swot-card__list">
-                        <li>住宅市場の高騰</li>
-                        <li>依存症・出所者への社会的偏見</li>
-                        <li>公的予算の制約</li>
-                        <li>競合団体の増加</li>
-                        <li>制度変更のリスク</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- NEW SECTION 3: Expertise & Credentials -->
-<section id="expert-section" class="section section--cream">
-    <div class="container">
-        <div class="section__header">
-            <span class="section__badge">🎓 Professional Credentials</span>
-            <h2 class="section__title">専門性と信頼性</h2>
-            <p class="section__description">
-                学術的裏付けと実践経験に基づく、信頼できる支援体制
-            </p>
-        </div>
-
-        <!-- Expert Voices -->
-        <div class="expert-voices">
-            <h3 class="expert-voices__title">👨‍⚕️ 専門家の評価</h3>
-            <div class="expert-quotes-grid">
-                <div class="expert-quote expert-quotes">
-                    <div class="expert-quote__icon">🩺</div>
-                    <blockquote class="expert-quote__text">
-                        「Housing Firstアプローチは、精神医学的にも極めて合理的です。安定した住環境なくして、薬物療法や心理療法の効果は限定的です。ルミライズのような実践は、日本の依存症治療に欠かせません。」
-                    </blockquote>
-                    <div class="expert-quote__author">
-                        <strong>松本俊彦</strong> 先生<br>
-                        <span>国立精神・神経医療研究センター 精神保健研究所 薬物依存研究部 部長</span>
-                    </div>
-                    <div class="expert-quote__note">※イメージ引用（実際の推薦ではありません）</div>
-                </div>
-
-                <div class="expert-quote expert-quotes">
-                    <div class="expert-quote__icon">📚</div>
-                    <blockquote class="expert-quote__text">
-                        「海外の豊富なエビデンスが示す通り、『まず住まいを』という原則は、再犯防止と社会復帰の成功率を劇的に高めます。日本でもこの科学的アプローチを広げるべきです。」
-                    </blockquote>
-                    <div class="expert-quote__author">
-                        <strong>更生保護研究者</strong>（匿名）<br>
-                        <span>大学教授・犯罪学専門</span>
-                    </div>
-                    <div class="expert-quote__note">※研究知見に基づくコメント例</div>
-                </div>
-
-                <div class="expert-quote expert-quotes">
-                    <div class="expert-quote__icon">🏛️</div>
-                    <blockquote class="expert-quote__text">
-                        「社会的投資収益率（SROI）の観点から、Housing Firstプログラムは極めて効率的です。医療費・司法費用の削減を考えれば、社会全体にとっても有益な投資です。」
-                    </blockquote>
-                    <div class="expert-quote__author">
-                        <strong>社会福祉経済学の視点</strong><br>
-                        <span>CPSTF研究レビューより</span>
-                    </div>
-                    <div class="expert-quote__note">※国際研究データに基づく評価</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Certifications & Partnerships -->
-        <div class="certifications">
-            <h3 class="certifications__title">🏅 認証・提携・所属団体</h3>
-            <div class="cert-grid">
-                <div class="cert-item">
-                    <div class="cert-item__icon">🤝</div>
-                    <h4>一般社団法人相模原ダルク</h4>
-                    <p>密接な連携協力関係<br>依存症回復支援</p>
-                </div>
-                <div class="cert-item">
-                    <div class="cert-item__icon">🏢</div>
-                    <h4>厚生労働省</h4>
-                    <p>生活困窮者自立支援制度<br>協力事業者</p>
-                </div>
-                <div class="cert-item">
-                    <div class="cert-item__icon">⚖️</div>
-                    <h4>法務省・保護観察所</h4>
-                    <p>更生保護事業<br>連携団体</p>
-                </div>
-                <div class="cert-item">
-                    <div class="cert-item__icon">🏥</div>
-                    <h4>医療機関ネットワーク</h4>
-                    <p>精神科病院・クリニック<br>との連携体制</p>
-                </div>
-                <div class="cert-item">
-                    <div class="cert-item__icon">🏛️</div>
-                    <h4>神奈川県・相模原市</h4>
-                    <p>地方自治体との<br>協力関係</p>
-                </div>
-                <div class="cert-item">
-                    <div class="cert-item__icon">📖</div>
-                    <h4>Housing First実践</h4>
-                    <p>国際的エビデンスに基づく<br>科学的アプローチ</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Professional Staff -->
-        <div class="staff-expertise">
-            <h3 class="staff-expertise__title">👥 専門スタッフ体制</h3>
-            <div class="staff-cards">
-                <div class="staff-card">
-                    <div class="staff-card__role">当事者経験スタッフ</div>
-                    <p>依存症からの回復経験を持つピアサポーター。当事者の気持ちを深く理解し、希望を伝えます。</p>
-                </div>
-                <div class="staff-card">
-                    <div class="staff-card__role">社会福祉士</div>
-                    <p>国家資格を持つ専門職。制度利用・関連機関連携をサポートします。</p>
-                </div>
-                <div class="staff-card">
-                    <div class="staff-card__role">精神保健福祉士</div>
-                    <p>精神保健分野の国家資格者。精神疾患のある方の相談に対応します。</p>
-                </div>
-                <div class="staff-card">
-                    <div class="staff-card__role">就労支援専門員</div>
-                    <p>キャリアカウンセリング・求人開拓などの就労支援を担当します。</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- NEW SECTION 4: Media & Recognition -->
-<section id="media-section" class="section section--white">
-    <div class="container">
-        <div class="section__header">
-            <span class="section__badge">📰 Media Coverage</span>
-            <h2 class="section__title">メディア掲載・社会的認知</h2>
-            <p class="section__description">
-                私たちの活動は、多くのメディアや専門機関に注目されています
-            </p>
-        </div>
-
-        <!-- Media Coverage Timeline -->
-        <div class="media-timeline">
-            <div class="timeline-item timeline-items">
-                <div class="timeline-item__year">2023年</div>
-                <div class="timeline-item__content">
-                    <h4>神奈川新聞特集記事</h4>
-                    <p>「Housing Firstで変わる支援の形」として当社の取り組みが紹介されました</p>
-                </div>
-            </div>
-            <div class="timeline-item timeline-items">
-                <div class="timeline-item__year">2022年</div>
-                <div class="timeline-item__content">
-                    <h4>NHK「ハートネットTV」出演</h4>
-                    <p>代表・田中秀泰が依存症支援の現場から語る</p>
-                </div>
-            </div>
-            <div class="timeline-item timeline-items">
-                <div class="timeline-item__year">2021年</div>
-                <div class="timeline-item__content">
-                    <h4>朝日新聞「再出発への一歩」</h4>
-                    <p>出所者支援の新しいモデルとして取り上げられる</p>
-                </div>
-            </div>
-            <div class="timeline-item timeline-items">
-                <div class="timeline-item__year">2020年</div>
-                <div class="timeline-item__content">
-                    <h4>厚生労働省「好事例集」掲載</h4>
-                    <p>生活困窮者支援の先進事例として紹介</p>
-                </div>
-            </div>
-        </div>
-        <p style="text-align: center; color: #999; font-size: 0.9rem; margin-top: 2rem;">
-            ※上記はイメージ例です。実際のメディア掲載実績は別途お問い合わせください。
-        </p>
-
-        <!-- Awards & Recognition -->
-        <div class="awards-section">
-            <h3 class="awards-section__title">🏆 受賞・表彰歴</h3>
-            <div class="awards-grid">
-                <div class="award-card">
-                    <div class="award-card__icon">🥇</div>
-                    <h4>相模原市 社会貢献賞</h4>
-                    <p class="award-card__year">2022年度</p>
-                    <p>地域社会への貢献が高く評価されました</p>
-                </div>
-                <div class="award-card">
-                    <div class="award-card__icon">⭐</div>
-                    <h4>厚生労働省 優良事業者</h4>
-                    <p class="award-card__year">2021年度</p>
-                    <p>生活困窮者支援における先駆的取り組み</p>
-                </div>
-                <div class="award-card">
-                    <div class="award-card__icon">🎖️</div>
-                    <h4>法務省 協力雇用主</h4>
-                    <p class="award-card__year">継続認定</p>
-                    <p>出所者の社会復帰支援への貢献</p>
-                </div>
-            </div>
-            <p style="text-align: center; color: #999; font-size: 0.9rem; margin-top: 1.5rem;">
-                ※イメージ例です。実際の受賞歴は別途ご確認ください。
-            </p>
-        </div>
-    </div>
-</section>
 
         <!-- Services Section with Images -->
         <section id="services" class="section section--gradient" style="background: linear-gradient(180deg, rgba(255, 252, 249, 0.98) 0%, rgba(255, 253, 250, 0.98) 100%);">
@@ -991,7 +320,7 @@
                 </div>
 
                 <div class="grid grid--3">
-                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFF9F5 100%); border: none; overflow: hidden;">
+                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFF9F5 100%); border: 2px solid rgba(255, 168, 92, 0.2); overflow: hidden;">
                         <div style="width: 100%; height: 240px; background: linear-gradient(rgba(0,0,0,0.05), rgba(255,168,92,0.15)), url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=85') center/cover; border-radius: var(--radius-lg) var(--radius-lg) 0 0; margin: -1rem -1rem 1.5rem -1rem;"></div>
                         <div class="card__icon">🏡</div>
                         <h3 class="card__title">依存症者向け<br>住宅提供サービス</h3>
@@ -1007,7 +336,7 @@
                         </ul>
                     </div>
 
-                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFF9F5 100%); border: none; overflow: hidden;">
+                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFF9F5 100%); border: 2px solid rgba(255, 168, 92, 0.2); overflow: hidden;">
                         <div style="width: 100%; height: 240px; background: linear-gradient(rgba(0,0,0,0.05), rgba(255,168,92,0.15)), url('https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&q=85') center/cover; border-radius: var(--radius-lg) var(--radius-lg) 0 0; margin: -1rem -1rem 1.5rem -1rem;"></div>
                         <div class="card__icon">🌱</div>
                         <h3 class="card__title">刑務所出所者向け<br>住宅提供サービス</h3>
@@ -1023,7 +352,7 @@
                         </ul>
                     </div>
 
-                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFF9F5 100%); border: none;">
+                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFF9F5 100%); border: 2px solid rgba(255, 168, 92, 0.2);">
                         <div style="width: 100%; height: 240px; background: linear-gradient(rgba(0,0,0,0.05), rgba(255,168,92,0.15)), url('https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=85') center/cover; border-radius: var(--radius-lg) var(--radius-lg) 0 0; margin: -1rem -1rem 1.5rem -1rem;"></div>
                         <div class="card__icon">🌙</div>
                         <h3 class="card__title">ナイトケアハウス<br>運営</h3>
@@ -1036,38 +365,6 @@
                             <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ ダルクプログラムとの連携</li>
                             <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 生活リズムのサポート</li>
                             <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 24時間対応体制</li>
-                        </ul>
-                    </div>
-
-                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFF9F5 100%); border: none; overflow: hidden;">
-                        <div style="width: 100%; height: 240px; background: linear-gradient(rgba(0,0,0,0.05), rgba(255,168,92,0.15)), url('https://images.unsplash.com/photo-1476234251651-f353703a034d?w=800&q=85') center/cover; border-radius: var(--radius-lg) var(--radius-lg) 0 0; margin: -1rem -1rem 1.5rem -1rem;"></div>
-                        <div class="card__icon">👪</div>
-                        <h3 class="card__title">DV被害者支援<br>母子向け住宅提供</h3>
-                        <p class="card__description">
-                            DV被害を受けた母子が一時的に安心して暮らせる住まいを提供。心の平安を取り戻し、新しい生活への第一歩を支援します。
-                        </p>
-                        <ul style="list-style: none; padding: 0; margin-top: 1.5rem;">
-                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 母子専用の安全な住環境</li>
-                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ プライバシー完全保護</li>
-                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 一時的な避難先として</li>
-                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 生活再建サポート</li>
-                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 関連支援機関との連携</li>
-                        </ul>
-                    </div>
-
-                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFF9F5 100%); border: none; overflow: hidden;">
-                        <div style="width: 100%; height: 240px; background: linear-gradient(rgba(0,0,0,0.05), rgba(255,168,92,0.15)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=85') center/cover; border-radius: var(--radius-lg) var(--radius-lg) 0 0; margin: -1rem -1rem 1.5rem -1rem;"></div>
-                        <div class="card__icon">🌏</div>
-                        <h3 class="card__title">外国人労働者向け<br>住宅提供サービス</h3>
-                        <p class="card__description">
-                            日本で働く外国人労働者の方々に、安心できる住まいを提供。言語サポートを含めた国際的な支援体制を整えています。
-                        </p>
-                        <ul style="list-style: none; padding: 0; margin-top: 1.5rem;">
-                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 多言語対応サポート</li>
-                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 文化的配慮のある環境</li>
-                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 就労支援との連携</li>
-                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 生活相談サポート</li>
-                            <li style="padding: 0.5rem 0; color: #5C4A3A;">✓ 移民・外国人特有の課題に対応</li>
                         </ul>
                     </div>
                 </div>
@@ -1086,7 +383,7 @@
                 </div>
 
                 <div class="grid grid--2">
-                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFFCF9 100%); border: none; overflow: hidden;">
+                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFFCF9 100%); border: 2px solid rgba(95, 217, 208, 0.2); overflow: hidden;">
                         <div style="width: 100%; height: 200px; background: linear-gradient(rgba(0,0,0,0.05), rgba(95,217,208,0.15)), url('https://images.unsplash.com/photo-1573497491208-6b1acb260507?w=800&q=85') center/cover; border-radius: var(--radius-lg) var(--radius-lg) 0 0; margin: -1rem -1rem 1.5rem -1rem;"></div>
                         <div class="card__icon">🤝</div>
                         <h3 class="card__title">生活相談・カウンセリング</h3>
@@ -1101,7 +398,7 @@
                         </ul>
                     </div>
 
-                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFFCF9 100%); border: none; overflow: hidden;">
+                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFFCF9 100%); border: 2px solid rgba(95, 217, 208, 0.2); overflow: hidden;">
                         <div style="width: 100%; height: 200px; background: linear-gradient(rgba(0,0,0,0.05), rgba(95,217,208,0.15)), url('https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=85') center/cover; border-radius: var(--radius-lg) var(--radius-lg) 0 0; margin: -1rem -1rem 1.5rem -1rem;"></div>
                         <div class="card__icon">💼</div>
                         <h3 class="card__title">就労支援・社会復帰サポート</h3>
@@ -1116,7 +413,7 @@
                         </ul>
                     </div>
 
-                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFFCF9 100%); border: none; overflow: hidden;">
+                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFFCF9 100%); border: 2px solid rgba(95, 217, 208, 0.2); overflow: hidden;">
                         <div style="width: 100%; height: 200px; background: linear-gradient(rgba(0,0,0,0.05), rgba(95,217,208,0.15)), url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=85') center/cover; border-radius: var(--radius-lg) var(--radius-lg) 0 0; margin: -1rem -1rem 1.5rem -1rem;"></div>
                         <div class="card__icon">🏥</div>
                         <h3 class="card__title">医療・福祉機関との連携</h3>
@@ -1131,7 +428,7 @@
                         </ul>
                     </div>
 
-                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFFCF9 100%); border: none; overflow: hidden;">
+                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFFCF9 100%); border: 2px solid rgba(95, 217, 208, 0.2); overflow: hidden;">
                         <div style="width: 100%; height: 200px; background: linear-gradient(rgba(0,0,0,0.05), rgba(95,217,208,0.15)), url('https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=800&q=85') center/cover; border-radius: var(--radius-lg) var(--radius-lg) 0 0; margin: -1rem -1rem 1.5rem -1rem;"></div>
                         <div class="card__icon">📚</div>
                         <h3 class="card__title">生活スキル向上プログラム</h3>
@@ -1263,7 +560,7 @@
                 </div>
 
                 <div class="grid grid--3">
-                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFF9F5 100%); border: none;">
+                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFF9F5 100%); border: 2px solid rgba(255, 200, 80, 0.3);">
                         <div style="width: 100%; height: 200px; background: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80') center/cover; border-radius: var(--radius-full); margin: 0 auto var(--space-4); width: 150px; height: 150px; box-shadow: 0 8px 24px rgba(255, 168, 92, 0.3);"></div>
                         <div class="card__icon">💚</div>
                         <h3 class="card__title">Aさん（40代男性）</h3>
@@ -1278,7 +575,7 @@
                         </p>
                     </div>
 
-                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFF9F5 100%); border: none;">
+                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFF9F5 100%); border: 2px solid rgba(255, 200, 80, 0.3);">
                         <div style="width: 100%; height: 200px; background: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=80') center/cover; border-radius: var(--radius-full); margin: 0 auto var(--space-4); width: 150px; height: 150px; box-shadow: 0 8px 24px rgba(255, 168, 92, 0.3);"></div>
                         <div class="card__icon">💙</div>
                         <h3 class="card__title">Bさん（30代男性）</h3>
@@ -1293,7 +590,7 @@
                         </p>
                     </div>
 
-                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFF9F5 100%); border: none;">
+                    <div class="card" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFF9F5 100%); border: 2px solid rgba(255, 200, 80, 0.3);">
                         <div style="width: 100%; height: 200px; background: url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80') center/cover; border-radius: var(--radius-full); margin: 0 auto var(--space-4); width: 150px; height: 150px; box-shadow: 0 8px 24px rgba(255, 168, 92, 0.3);"></div>
                         <div class="card__icon">💛</div>
                         <h3 class="card__title">Cさん（50代男性）</h3>
@@ -1339,7 +636,7 @@
                             <span style="font-size: 1.5rem;">+</span>
                         </button>
                         <div class="faq-item__answer">
-                            <p>依存症からの回復を目指す方、刑務所を出所された方、DV被害を受けた母子、外国人労働者、その他住まいを必要としている方が対象です。年齢・性別・国籍は問いません。また、生活保護を受給されている方も入居可能です。まずはお気軽にご相談ください。一人ひとりの状況に合わせて、最適な支援を提供いたします。</p>
+                            <p>依存症からの回復を目指す方、刑務所を出所された方、行き場のない方など、住まいを必要としている方が対象です。年齢・性別・国籍は問いません。また、生活保護を受給されている方も入居可能です。まずはお気軽にご相談ください。一人ひとりの状況に合わせて、最適な支援を提供いたします。</p>
                         </div>
                     </div>
 
@@ -1406,13 +703,13 @@
                             <span style="font-size: 1.5rem;">+</span>
                         </button>
                         <div class="faq-item__answer">
-                            <p style="line-height: 2; margin-bottom: 1rem; font-weight: 600; color: #374151;">月額家賃の他に、以下の費用が別途必要です：</p>
-                            <ul style="list-style: none; padding-left: 0; line-height: 1.9; background: #F9FAFB; padding: 1.5rem; border-radius: 0.5rem; border-left: 4px solid #6FD9D1;">
-                                <li style="padding: 0.5rem 0; color: #4B5563;">💡 光熱費（電気・ガス・水道）</li>
-                                <li style="padding: 0.5rem 0; color: #4B5563;">🌐 インターネット回線費用（利用する場合）</li>
-                                <li style="padding: 0.5rem 0; color: #4B5563;">🏢 共益費・管理費（物件により異なります）</li>
+                            <p style="line-height: 2; margin-bottom: 1rem; font-weight: 600; color: #2D2416;">月額家賃の他に、以下の費用が別途必要です：</p>
+                            <ul style="list-style: none; padding-left: 0; line-height: 1.9; background: #FFFCF9; padding: 1.5rem; border-radius: 0.5rem; border-left: 4px solid #FFA85C;">
+                                <li style="padding: 0.5rem 0; color: #5C4A3A;">💡 光熱費（電気・ガス・水道）</li>
+                                <li style="padding: 0.5rem 0; color: #5C4A3A;">🌐 インターネット回線費用（利用する場合）</li>
+                                <li style="padding: 0.5rem 0; color: #5C4A3A;">🏢 共益費・管理費（物件により異なります）</li>
                             </ul>
-                            <p style="margin-top: 1rem; line-height: 1.9; color: #4B5563;">入居前に詳細な費用をご説明します。予想外の費用は発生しません。</p>
+                            <p style="margin-top: 1rem; line-height: 1.9; color: #5C4A3A;">入居前に詳細な費用をご説明します。予想外の費用は発生しません。</p>
                         </div>
                     </div>
 
@@ -1430,7 +727,7 @@
                                     <h4 style="margin: 0 0 0.5rem 0; color: #2D2416; font-weight: 700;">💬 生活相談・支援</h4>
                                     <p style="margin: 0; line-height: 1.8; color: #5C4A3A;">定期的な面談、生活相談などを実施</p>
                                 </div>
-                                <div style="background: #F0F9FF; padding: 1rem; border-radius: 0.5rem; border-left: 4px solid #6FD9D1;">
+                                <div style="background: #FFF9F5; padding: 1rem; border-radius: 0.5rem; border-left: 4px solid #FFA85C;">
                                     <h4 style="margin: 0 0 0.5rem 0; color: #2D2416; font-weight: 700;">💼 就労支援</h4>
                                     <p style="margin: 0; line-height: 1.8; color: #5C4A3A;">就労支援情報の提供、連携調整</p>
                                 </div>
@@ -1452,8 +749,8 @@
                             <span style="font-size: 1.5rem;">+</span>
                         </button>
                         <div class="faq-item__answer">
-                            <p style="line-height: 2; margin-bottom: 1rem;">ナイトケアハウスは、<strong style="color: #1BB5A8;">相模原ダルク利用者専用</strong>の夜間ケア施設です。</p>
-                            <div style="background: linear-gradient(135deg, #FFF9F5 0%, #FFF4ED 100%); padding: 1.5rem; border-radius: 0.75rem; margin-top: 1rem; border: none;">
+                            <p style="line-height: 2; margin-bottom: 1rem;">ナイトケアハウスは、<strong style="color: #FFA85C;">相模原ダルク利用者専用</strong>の夜間ケア施設です。</p>
+                            <div style="background: linear-gradient(135deg, #FFF9F5 0%, #FFF4ED 100%); padding: 1.5rem; border-radius: 0.75rem; margin-top: 1rem; border: 2px solid rgba(255,168,92,0.2);">
                                 <p style="margin: 0 0 1rem 0; line-height: 1.9; color: #5C4A3A;">🌞 日中：ダルクのプログラムに参加</p>
                                 <p style="margin: 0 0 1rem 0; line-height: 1.9; color: #5C4A3A;">🌙 夜間：ナイトケアハウスで安心して休息</p>
                                 <p style="margin: 0; line-height: 1.9; color: #5C4A3A;">⚡ 24時間体制でスタッフがサポート</p>
@@ -1591,8 +888,6 @@
                                     <option value="housing">住宅提供サービスについて</option>
                                     <option value="addiction">依存症者向け住宅について</option>
                                     <option value="exconvict">刑務所出所者向け住宅について</option>
-                                    <option value="dv">DV被害者（母子）向け住宅について</option>
-                                    <option value="foreign">外国人労働者向け住宅について</option>
                                     <option value="nightcare">ナイトケアハウスについて</option>
                                     <option value="other">その他</option>
                                 </select>
@@ -1634,8 +929,6 @@
                     <ul class="footer__links">
                         <li><a href="#services">依存症者向け住宅提供</a></li>
                         <li><a href="#services">刑務所出所者向け住宅提供</a></li>
-                        <li><a href="#services">DV被害者（母子）支援</a></li>
-                        <li><a href="#services">外国人労働者向け住宅提供</a></li>
                         <li><a href="#services">ナイトケアハウス運営</a></li>
                         <li><a href="#support">生活サポート</a></li>
                     </ul>
@@ -1716,22 +1009,17 @@
         const header = document.querySelector('.header');
         
         window.addEventListener('scroll', () => {
-            const currentScroll = window.pageYOffset;
-            
-            // Back to top button
-            if (currentScroll > 500) {
+            if (window.pageYOffset > 500) {
                 backToTop.classList.add('visible');
             } else {
                 backToTop.classList.remove('visible');
             }
             
             // Add scrolled class to header
-            if (currentScroll > 100) {
+            if (window.pageYOffset > 100) {
                 header.classList.add('scrolled');
-                header.style.boxShadow = '0 4px 12px rgba(0, 169, 157, 0.15)';
             } else {
                 header.classList.remove('scrolled');
-                header.style.boxShadow = '0 2px 8px rgba(0, 169, 157, 0.1)';
             }
         });
 
@@ -1753,21 +1041,27 @@
             });
         }
 
-        // Additional header shadow effect (consolidated with above)
-        // Removed duplicate const header declaration
+        // Header scroll effect
+        let lastScroll = 0;
+        const header = document.querySelector('.header');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                header.style.boxShadow = '0 4px 12px rgba(255, 140, 66, 0.15)';
+            } else {
+                header.style.boxShadow = '0 2px 8px rgba(255, 140, 66, 0.1)';
+            }
+            
+            lastScroll = currentScroll;
+        });
 
         // Chart.js Initialization
         document.addEventListener('DOMContentLoaded', function() {
-            // Wait for Chart.js to load
-            if (typeof Chart === 'undefined') {
-                console.error('Chart.js is not loaded!');
-                return;
-            }
-            
             // Success Rate Chart
             const successCtx = document.getElementById('successChart');
             if (successCtx) {
-                console.log('Creating chart with element:', successCtx);
                 new Chart(successCtx, {
                     type: 'bar',
                     data: {
@@ -1775,15 +1069,15 @@
                         datasets: [{
                             label: '継続居住率（%）',
                             data: [78, 82, 85, 88, 90, 92],
-                            backgroundColor: 'rgba(0, 169, 157, 0.8)',
-                            borderColor: 'rgba(0, 169, 157, 1)',
+                            backgroundColor: 'rgba(255, 140, 66, 0.8)',
+                            borderColor: 'rgba(255, 140, 66, 1)',
                             borderWidth: 2,
                             borderRadius: 8
                         }, {
                             label: '生活安定化率（%）',
                             data: [72, 75, 80, 83, 86, 89],
-                            backgroundColor: 'rgba(142, 142, 142, 0.8)',
-                            borderColor: 'rgba(142, 142, 142, 1)',
+                            backgroundColor: 'rgba(78, 205, 196, 0.8)',
+                            borderColor: 'rgba(78, 205, 196, 1)',
                             borderWidth: 2,
                             borderRadius: 8
                         }]
@@ -1806,7 +1100,7 @@
                                 display: false
                             },
                             tooltip: {
-                                backgroundColor: 'rgba(31, 41, 55, 0.9)',
+                                backgroundColor: 'rgba(45, 36, 22, 0.9)',
                                 titleFont: {
                                     family: "'Noto Sans JP', sans-serif",
                                     size: 14
@@ -1877,8 +1171,5 @@
             });
         });
     </script>
-    
-    <!-- セクション折り畳み・展開機能 -->
-    <script src="section-toggle.js"></script>
 </body>
 </html>

@@ -1,0 +1,56 @@
+{
+  "output": "outputs/lumirize_company_intro.pptx",
+  "theme": {
+    "title_font_size_pt": 34,
+    "body_font_size_pt": 22
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "株式会社ルミライズ 会社紹介",
+      "subtitle": "住まいを整え、回復と再出発へ。",
+      "notes": "冒頭で会社のミッションを短く共有する。"
+    },
+    {
+      "type": "section",
+      "title": "事業概要",
+      "subtitle": "Housing Firstに基づく住宅支援"
+    },
+    {
+      "type": "content",
+      "title": "提供している主なサービス",
+      "bullets": [
+        "依存症者向け住宅提供",
+        "刑務所出所者向け住宅提供",
+        "ナイトケアハウス",
+        "相談・生活サポート"
+      ]
+    },
+    {
+      "type": "content",
+      "title": "入居までの流れ",
+      "bullets": [
+        {
+          "text": "1. 電話・メールで相談",
+          "level": 0
+        },
+        {
+          "text": "2. ヒアリングと条件確認",
+          "level": 0
+        },
+        {
+          "text": "3. 物件案内と見学",
+          "level": 0
+        },
+        {
+          "text": "4. 契約・入居準備",
+          "level": 0
+        },
+        {
+          "text": "5. 入居後フォロー",
+          "level": 0
+        }
+      ]
+    }
+  ]
+}
